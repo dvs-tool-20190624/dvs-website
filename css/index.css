@@ -134,6 +134,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 15px 15px 30px 15px;
 }
 nav img {
   max-width: 25%;
@@ -142,9 +143,9 @@ nav .nav-items {
   display: flex;
 }
 nav .nav-items a {
-  font-size: 26px;
+  font-size: 24px;
   font-family: sans-serif;
   color: #0088ff;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
 }
