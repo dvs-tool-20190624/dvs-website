@@ -86,7 +86,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 62.5%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -126,13 +126,43 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
+html {
+  font-size: 62.5%;
+}
 nav {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 15px 30px 15px;
 }
 nav img {
-  outline: red solid 2px;
-  max-height: 25px;
-  max-width: 100px;
+  max-width: 25%;
+}
+nav .nav-items {
+  display: flex;
+}
+nav .nav-items a {
+  font-size: 24px;
+  font-family: sans-serif;
+  color: #0088ff;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: black;
+  color: white;
+}
+footer a {
+  color: white;
 }
 .resourceList {
   display: flex;
