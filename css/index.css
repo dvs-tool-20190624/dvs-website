@@ -86,7 +86,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 62.5%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -126,11 +126,25 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
 nav {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 nav img {
-  outline: red solid 2px;
-  max-height: 25px;
-  max-width: 100px;
+  max-width: 25%;
+}
+nav .nav-items {
+  display: flex;
+}
+nav .nav-items a {
+  font-size: 26px;
+  font-family: sans-serif;
+  color: #0088ff;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
