@@ -126,3 +126,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+nav {
+  display: flex;
+}
+nav img {
+  outline: red solid 2px;
+  max-height: 25px;
+  max-width: 100px;
+}
