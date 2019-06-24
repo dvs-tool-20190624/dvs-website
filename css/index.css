@@ -130,6 +130,9 @@ a {
   text-decoration: none;
   color: black;
 }
+html {
+  font-size: 62.5%;
+}
 nav {
   display: flex;
   align-items: center;
@@ -149,9 +152,6 @@ nav .nav-items a {
   margin-left: 1.5em;
   margin-right: 1.5em;
 }
-html {
-  font-size: 62.5%;
-}
 footer {
   display: flex;
   flex-direction: column;
@@ -163,4 +163,31 @@ footer {
 }
 footer a {
   color: white;
+}
+.resourceList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.8rem;
+}
+.resourceList h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.resourceList h2 a {
+  color: #06059e;
+}
+.resourceList div {
+  margin: 10px 10px 40px;
+  width: 90%;
+}
+.resourceList div p {
+  color: #262626;
+}
+.resourceList .resourceRight {
+  justify-content: flex-end;
+}
+.resourceList .resourceRight h2 {
+  text-align: right;
+  margin-right: 15px;
 }
