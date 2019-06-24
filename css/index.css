@@ -173,9 +173,15 @@ footer a {
   font-size: 3rem;
   margin-bottom: 10px;
 }
+.resourceList h2 a {
+  color: #06059e;
+}
 .resourceList div {
   margin: 10px 10px 40px;
   width: 90%;
+}
+.resourceList div p {
+  color: #262626;
 }
 .resourceList .resourceRight {
   justify-content: flex-end;
