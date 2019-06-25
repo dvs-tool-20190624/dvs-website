@@ -202,6 +202,38 @@ section p {
   border-radius: 0.2rem;
   padding: 2rem 3rem;
   color: white;
+  animation: btn-glow-reverse 300ms;
+}
+.btn a:hover {
+  animation: btn-glow 300ms forwards;
+}
+@keyframes btn-glow {
+  0% {
+    box-shadow: 0 0 0 #0088ff;
+  }
+  40% {
+    box-shadow: 0 0 0.5rem #0088ff;
+  }
+  60% {
+    box-shadow: 0 0 1rem #0088ff;
+  }
+  100% {
+    box-shadow: 0 0 1.5rem #0088ff;
+  }
+}
+@keyframes btn-glow-reverse {
+  0% {
+    box-shadow: 0 0 2.5rem #0088ff;
+  }
+  40% {
+    box-shadow: 0 0 2rem #0088ff;
+  }
+  60% {
+    box-shadow: 0 0 1rem #0088ff;
+  }
+  100% {
+    box-shadow: 0 0 0 #0088ff;
+  }
 }
 footer {
   font-size: 1.6em;

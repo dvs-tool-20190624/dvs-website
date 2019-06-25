@@ -48,5 +48,24 @@ section {
     border-radius: .2rem;
     padding: 2rem 3rem;
     color: white;
+    animation: btn-glow-reverse 300ms;
+  }
+
+  a:hover {
+    animation: btn-glow 300ms forwards;
+  }
+
+
+  @keyframes btn-glow {
+    0% {box-shadow: 0 0 0 @flightBlue;}
+    40% {box-shadow: 0 0 .5rem @flightBlue;}
+    60% {box-shadow: 0 0 1rem @flightBlue;}
+    100% {box-shadow: 0 0 1.5rem @flightBlue;}
+  }
+  @keyframes btn-glow-reverse {
+    0% {box-shadow: 0 0 2.5rem @flightBlue;}
+    40% {box-shadow: 0 0 2rem @flightBlue;}
+    60% {box-shadow: 0 0 1rem @flightBlue;}
+    100% {box-shadow: 0 0 0 @flightBlue;}
   }
 }
