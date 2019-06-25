@@ -172,6 +172,7 @@ footer a {
 }
 .resourceIntro p {
   font-size: 1.8rem;
+  color: #262626;
 }
 .resourceList {
   display: flex;
