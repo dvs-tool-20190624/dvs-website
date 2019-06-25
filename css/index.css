@@ -134,7 +134,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 15px 15px 30px 15px;
+  margin: 1.5rem 1.5rem 3rem 1.5rem;
 }
 nav img {
   max-width: 25%;
@@ -146,8 +146,8 @@ nav .nav-items a {
   font-size: 2.4em;
   font-family: sans-serif;
   color: #0088ff;
-  margin-left: 1.5em;
-  margin-right: 1.5em;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 html,
 body {
@@ -183,8 +183,8 @@ section h2 {
 section p {
   font-size: 1.8em;
   font-family: 'EB Garamond', sans-serif;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 .btn {
   display: flex;
@@ -196,8 +196,8 @@ section p {
 }
 .btn a {
   background: black;
-  border-radius: 2px;
-  padding: 10px 15px;
+  border-radius: 0.2rem;
+  padding: 1rem 1.5rem;
   color: white;
 }
 footer {
@@ -207,16 +207,16 @@ footer {
   flex-direction: column;
   align-items: center;
   flex-shrink: 0;
-  padding-top: 70px;
-  padding-bottom: 60px;
+  padding-top: 7rem;
+  padding-bottom: 6rem;
   background: black;
 }
 footer .social-icons {
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
 }
 footer .social-icons a {
   color: white;
   font-size: 1.4em;
-  margin-left: 6px;
-  margin-right: 6px;
+  margin-left: 0.6rem;
+  margin-right: 0.6re;
 }
