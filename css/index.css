@@ -206,12 +206,14 @@ footer .social-icons a {
 .resourceIntro {
   display: flex;
   justify-content: flex-start;
-  margin: 20px auto;
+  margin: 20px auto 0;
   width: 90%;
 }
 .resourceIntro p {
   font-size: 1.8rem;
   color: #262626;
+  padding-bottom: 30px;
+  border-bottom: 1px solid black;
 }
 .resourceList {
   display: flex;
@@ -222,12 +224,13 @@ footer .social-icons a {
 .resourceList h2 {
   font-size: 3rem;
   margin-bottom: 10px;
+  margin-top: 20px;
 }
 .resourceList h2 a {
   color: #06059e;
 }
 .resourceList div {
-  margin: 10px 10px 40px;
+  margin: 0 10px 30px;
   width: 90%;
 }
 .resourceList div p {
@@ -237,6 +240,23 @@ footer .social-icons a {
 }
 .resourceList .resourceRight {
   justify-content: flex-end;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .resourceList .resourceRight {
+    flex-direction: column-reverse;
+  }
+}
+.resourceList .resourceRight div {
+  flex-direction: row;
+  width: 45%;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .resourceList .resourceRight div {
+    width: 95%;
+  }
 }
 .resourceList .resourceRight h2 {
   text-align: right;
@@ -245,6 +265,31 @@ footer .social-icons a {
   .resourceList .resourceRight h2 {
     text-align: left;
   }
+}
+.resourceList .resourceRight img {
+  width: 45%;
+}
+.resourceList .resourceLeft {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .resourceList .resourceLeft {
+    flex-direction: column;
+  }
+}
+.resourceList .resourceLeft div {
+  flex-direction: row;
+  width: 45%;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .resourceList .resourceLeft div {
+    width: 95%;
+  }
+}
+.resourceList .resourceLeft img {
+  width: 45%;
 }
 .headerImg {
   width: 100%;
