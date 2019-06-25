@@ -1,23 +1,103 @@
 body{
     margin: 0 auto;
     max-width: 1000px;
+
+    h1{
+        font-size: 6rem;
+        display: flex;
+        justify-content: center;
+        color: #06059E;
+    }
+
+    h2{
+        font-size: 4rem; 
+        text-align: center; 
+        margin: 10px;
+    }
+
     .UI-Devs {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
 
     .dev {
         border: 1px solid red;
-        flex-basis: column;
-        width:30%;
-        justify-content: center;
-        height: 300px;
+        width:98%;
+        height: 380px;
+        display: flex;
 
-        .individual-photos {
-            width: 80%;
-            border-radius: 50%;
         }
+
+        h3 {
+            font-size: 1.7rem;
+        }
+
+        p {
+            font-size: 1.4rem;
+        }
+       
+    }
+    .photo1{
+        width: 100%;
+        border-radius: 50%;
+        
+    }
+    .photo-struggle{
+        width: 80%;
+    }
+
+    .photo2{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        //margin-left: 300px;
+    }
+
+
+    .name-description{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        border: 1px solid red;
+    
+    }
+
+    .dev2{
+        flex-direction: row-reverse;
     }
     
+
+    .bottom-developers{
+        border: 1px solid red;  
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    .bottom-dev{
+        border: 1px solid red;
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+       h3{
+           font-size: 1.7rem;
+           margin: 5px;
+           text-align: center;
+       }
+
+       p{
+           font-size: 1.4rem;
+           margin: 5px;
+       }
+
+       .photo3{
+           width: 80%;
+           border-radius: 50%;
+           margin-left: 10%;
+       }
     }
 
 }
