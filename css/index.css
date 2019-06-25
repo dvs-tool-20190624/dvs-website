@@ -152,90 +152,150 @@ nav .nav-items a {
 html {
   font-size: 62.5%;
 }
-body {
+.about-page-body {
   margin: 0 auto;
   max-width: 1000px;
 }
-body .header-photo {
+.about-page-body .header-photo {
   width: 100%;
 }
-body h1 {
+@media (max-width: 500px) {
+  .about-page-body .header-photo {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+.about-page-body h1 {
   font-size: 6rem;
   display: flex;
   justify-content: center;
   margin-top: 5%;
   color: #06059E;
 }
-body h2 {
+@media (max-width: 500px) {
+  .about-page-body h1 {
+    font-size: 4rem;
+  }
+}
+.about-page-body h2 {
   font-size: 4rem;
   text-align: center;
   margin: 10px;
   margin-top: 5%;
   margin-bottom: 5%;
 }
-body .UI-Devs {
+@media (max-width: 500px) {
+  .about-page-body h2 {
+    font-size: 2rem;
+  }
+}
+.about-page-body .UI-Devs {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border-top: 5px solid black;
   padding-top: 5%;
 }
-body .UI-Devs .dev {
+.about-page-body .UI-Devs .dev {
   width: 98%;
   height: 380px;
   display: flex;
 }
-body .UI-Devs h3 {
+@media (max-width: 500px) {
+  .about-page-body .UI-Devs .dev {
+    flex-direction: column;
+  }
+}
+.about-page-body .UI-Devs h3 {
   font-size: 1.7rem;
   margin-bottom: 3%;
 }
-body .UI-Devs p {
+@media (max-width: 500px) {
+  .about-page-body .UI-Devs h3 {
+    text-align: center;
+  }
+}
+.about-page-body .UI-Devs p {
   font-size: 1.4rem;
 }
-body .photo1 {
+.about-page-body .photo1 {
   width: 100%;
   border-radius: 50%;
 }
-body .photo-struggle {
+@media (max-width: 500px) {
+  .about-page-body .photo1 {
+    width: 60%;
+    margin-left: 20%;
+  }
+}
+.about-page-body .photo4 {
+  width: 100%;
+  height: 90%;
+  border-radius: 50%;
+}
+@media (max-width: 500px) {
+  .about-page-body .photo4 {
+    width: 60%;
+    margin-left: 20%;
+  }
+}
+.about-page-body .photo-struggle {
   width: 80%;
 }
-body .photo2 {
+.about-page-body .photo2 {
   width: 100%;
   height: 100%;
   border-radius: 50%;
 }
-body .name-description {
+@media (max-width: 500px) {
+  .about-page-body .photo2 {
+    width: 70%;
+    height: 80%;
+    margin-left: 25%;
+  }
+}
+.about-page-body .name-description {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 20px;
 }
-body .dev2 {
+@media (max-width: 500px) {
+  .about-page-body .name-description {
+    padding: none;
+  }
+}
+.about-page-body .dev2 {
   flex-direction: row-reverse;
 }
-body .bottom-developers {
+.about-page-body .bottom-developers {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
   border-top: 5px solid black;
   margin-bottom: 5%;
 }
-body .bottom-dev {
+@media (max-width: 500px) {
+  .about-page-body .bottom-developers {
+    flex-direction: column;
+  }
+}
+.about-page-body .bottom-dev {
   width: 98%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-body .bottom-dev h3 {
+.about-page-body .bottom-dev h3 {
   font-size: 1.7rem;
   margin: 5px;
   text-align: center;
 }
-body .bottom-dev p {
+.about-page-body .bottom-dev p {
   font-size: 1.4rem;
   margin: 5px;
 }
-body .bottom-dev .photo3 {
+.about-page-body .bottom-dev .photo3 {
   width: 80%;
   border-radius: 50%;
   margin-left: 10%;

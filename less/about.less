@@ -1,10 +1,15 @@
-body{
+.about-page-body{
     margin: 0 auto;
     max-width: 1000px;
 
 
        .header-photo{
            width: 100%;
+
+           @media @mobile {
+              width: 90%; 
+              margin-left: 5%;
+           }
        } 
     
 
@@ -14,6 +19,10 @@ body{
         justify-content: center;
         margin-top: 5%;
         color: #06059E;
+
+        @media @mobile {
+            font-size: 4rem;
+        }
     }
 
     h2{
@@ -22,6 +31,10 @@ body{
         margin: 10px;
         margin-top: 5%;
         margin-bottom: 5%;
+
+        @media @mobile {
+            font-size: 2rem;
+        }
     }
 
     .UI-Devs {
@@ -31,17 +44,26 @@ body{
         border-top: 5px solid black;
         padding-top: 5%;
 
+
     .dev {
         //border: 1px solid red;
         width:98%;
         height: 380px;
         display: flex;
 
+        @media @mobile {
+           flex-direction: column; 
+        }
+
         }
 
         h3 {
             font-size: 1.7rem;
             margin-bottom: 3%;
+
+            @media @mobile {
+                text-align: center;
+            }
         }
 
         p {
@@ -52,8 +74,26 @@ body{
     .photo1{
         width: 100%;
         border-radius: 50%;
+
+        @media @mobile {
+            width: 60%;
+            margin-left: 20%;
+        }
         
     }
+    .photo4{
+         width: 100%;
+         height: 90%;
+        border-radius: 50%;
+
+        @media @mobile {
+            width: 60%;
+            // height: 90%;
+            margin-left: 20%;
+        }
+        
+    }
+
     .photo-struggle{
         width: 80%;
     }
@@ -63,6 +103,12 @@ body{
         height: 100%;
         border-radius: 50%;
         //margin-left: 300px;
+
+        @media @mobile {
+            width: 70%;
+            height: 80%;
+            margin-left: 25%;
+        }
     }
 
 
@@ -72,6 +118,10 @@ body{
         justify-content: center;
         padding: 20px;
         //border: 1px solid red;
+
+        @media @mobile {
+            padding: none;
+        }
     
     }
 
@@ -87,6 +137,10 @@ body{
         margin-top: 30px;
         border-top: 5px solid black;
         margin-bottom: 5%;
+
+        @media @mobile {
+            flex-direction: column;
+        }
     }
 
     .bottom-dev{
