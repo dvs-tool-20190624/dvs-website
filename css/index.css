@@ -162,7 +162,7 @@ body {
 }
 .header-img {
   width: 100%;
-  height: 250px;
+  height: auto;
 }
 .site-wrapper {
   flex: 1 0 auto;
