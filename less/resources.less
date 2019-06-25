@@ -39,11 +39,47 @@
     }
     .resourceRight {
         justify-content: flex-end;
+        display: flex;
+        align-items: center;
+         @media @mobile {
+            flex-direction: column-reverse;
+        }
+        div {
+          flex-direction: row;
+            width: 45%;  
+            justify-content: space-between;
+           @media @mobile {
+               width: 95%;
+           }
+        }
+            
         h2 {
             text-align: right;
             @media @tablet{
                 text-align: left;
             }
+        }
+        img {
+            width: 45%;
+        }
+    }
+    .resourceLeft {
+        display: flex;
+        align-items: center;
+        @media @mobile {
+            flex-direction: column;
+        }
+        div {
+            flex-direction: row;
+              width: 45%;  
+              justify-content: space-between; 
+              @media @mobile {
+                width: 95%;
+            }
+          }
+          img {
+            width: 45%;
+           
         }
     }
 }

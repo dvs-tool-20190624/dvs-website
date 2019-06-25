@@ -217,6 +217,23 @@ footer .social-icons a {
 }
 .resourceList .resourceRight {
   justify-content: flex-end;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .resourceList .resourceRight {
+    flex-direction: column-reverse;
+  }
+}
+.resourceList .resourceRight div {
+  flex-direction: row;
+  width: 45%;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .resourceList .resourceRight div {
+    width: 95%;
+  }
 }
 .resourceList .resourceRight h2 {
   text-align: right;
@@ -225,6 +242,31 @@ footer .social-icons a {
   .resourceList .resourceRight h2 {
     text-align: left;
   }
+}
+.resourceList .resourceRight img {
+  width: 45%;
+}
+.resourceList .resourceLeft {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .resourceList .resourceLeft {
+    flex-direction: column;
+  }
+}
+.resourceList .resourceLeft div {
+  flex-direction: row;
+  width: 45%;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .resourceList .resourceLeft div {
+    width: 95%;
+  }
+}
+.resourceList .resourceLeft img {
+  width: 45%;
 }
 .headerImg {
   width: 100%;
