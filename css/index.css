@@ -199,6 +199,11 @@ footer a {
 .resourceList .resourceRight h2 {
   text-align: right;
 }
+@media (max-width: 800px) {
+  .resourceList .resourceRight h2 {
+    text-align: left;
+  }
+}
 .headerImg {
   width: 100%;
 }
