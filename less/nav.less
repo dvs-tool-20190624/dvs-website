@@ -6,11 +6,24 @@ nav {
 
   margin: 1.5rem 1.5rem 3rem 1.5rem;
 
+  @media @mobile {
+    flex-direction: column;
+  }
+
   img {
     max-width: 20%;
+
+    @media @mobile {
+      max-width: 80%
+    }
   }
   .nav-items {
     display: flex;
+
+    @media @mobile {
+      flex-direction: column;
+      text-align: center;
+    }
 
     a {
       font-size: 2.2em;
@@ -18,6 +31,12 @@ nav {
       color: @flightBlue;
       margin-left: 3rem;
       margin-right: 3rem;
+
+      @media @mobile {
+        margin-top: 5.5%;
+        padding-bottom: 2.5%;
+        border-bottom: 1px solid @flightBlue;
+      }
     }
   }
 }

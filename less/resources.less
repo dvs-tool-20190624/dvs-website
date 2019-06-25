@@ -2,11 +2,13 @@
 .resourceIntro {
     display:flex;
     justify-content: flex-start;
-    margin:20px auto;
+    margin:20px auto 0;
     width: 90%;
     p{
         font-size: 1.8rem;
         color: @fdarkGrey;
+        padding-bottom: 30px;
+        border-bottom:1px solid black;
     
     }
 }
@@ -19,13 +21,14 @@
     h2 {
     font-size: 3rem;
     margin-bottom: 10px;
+    margin-top: 20px;
         a{
           color: @fdarkBlue;  
         }
     
     }
     div {
-        margin:10px 10px 40px;
+        margin:0 10px 30px;
         width: 90%;
 
         p {
@@ -36,11 +39,52 @@
     }
     .resourceRight {
         justify-content: flex-end;
+        display: flex;
+        align-items: center;
+         @media @mobile {
+            flex-direction: column-reverse;
+        }
+        div {
+          flex-direction: row;
+            width: 45%;  
+            justify-content: space-between;
+           @media @mobile {
+               width: 95%;
+           }
+        }
+            
         h2 {
             text-align: right;
             @media @tablet{
                 text-align: left;
             }
+        }
+        img {
+            width: 75%;
+            margin:0 auto;
+        }
+    }
+    .resourceLeft {
+        display: flex;
+        align-items: center;
+        @media @mobile {
+            flex-direction: column;
+        }
+        div {
+            flex-direction: row;
+              width: 45%;  
+              justify-content: space-between;  
+              @media @mobile {
+                width: 95%;
+            }
+          }
+          img {
+            width: 75%;
+           padding-left: 25%;
+           @media @mobile {
+               padding-left: 0;
+           }
+           
         }
     }
 }
