@@ -323,6 +323,9 @@ section p {
     font-size: 4rem;
   }
 }
+.about-page-body .developers {
+  flex-direction: column;
+}
 .about-page-body h2 {
   font-size: 4rem;
   text-align: center;
