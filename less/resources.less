@@ -1,4 +1,15 @@
 
+.resourceIntro {
+    display:flex;
+    justify-content: flex-start;
+    margin:20px auto;
+    width: 90%;
+    p{
+        font-size: 1.8rem;
+    
+    }
+}
+
 .resourceList {
     display: flex;
     flex-direction: column;
@@ -24,7 +35,13 @@
         justify-content: flex-end;
         h2 {
             text-align: right;
-            margin-right: 15px;
+            @media @tablet{
+                text-align: left;
+            }
         }
     }
+}
+
+.headerImg {
+    width: 100%;
 }
