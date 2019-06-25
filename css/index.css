@@ -147,11 +147,27 @@ nav {
   justify-content: space-between;
   margin: 1.5rem 1.5rem 3rem 1.5rem;
 }
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+  }
+}
 nav img {
   max-width: 20%;
 }
+@media (max-width: 500px) {
+  nav img {
+    max-width: 80%;
+  }
+}
 nav .nav-items {
   display: flex;
+}
+@media (max-width: 500px) {
+  nav .nav-items {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 nav .nav-items a {
   font-size: 2.2em;
@@ -159,6 +175,13 @@ nav .nav-items a {
   color: #0088ff;
   margin-left: 3rem;
   margin-right: 3rem;
+}
+@media (max-width: 500px) {
+  nav .nav-items a {
+    margin-top: 5.5%;
+    padding-bottom: 2.5%;
+    border-bottom: 1px solid #0088ff;
+  }
 }
 footer {
   font-size: 1.6em;
@@ -392,7 +415,7 @@ section p {
   font-size: 1.4rem;
 }
 .about-page-body .photo1 {
-  width: 100%;
+  width: 90%;
   border-radius: 50%;
 }
 @media (max-width: 500px) {
@@ -402,8 +425,8 @@ section p {
   }
 }
 .about-page-body .photo4 {
-  width: 100%;
-  height: 90%;
+  width: 75%;
+  margin-left: 5%;
   border-radius: 50%;
 }
 @media (max-width: 800px) {
@@ -427,21 +450,20 @@ section p {
 }
 .about-page-body .photo2 {
   width: 100%;
-  height: 100%;
   border-radius: 50%;
 }
 @media (max-width: 500px) {
   .about-page-body .photo2 {
     width: 70%;
     height: 80%;
-    margin-left: 25%;
+    margin-left: 15%;
   }
 }
 .about-page-body .name-description {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 5%;
+  padding: 1%;
 }
 @media (max-width: 800px) {
   .about-page-body .name-description {
