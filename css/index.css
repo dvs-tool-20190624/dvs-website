@@ -164,6 +164,15 @@ footer {
 footer a {
   color: white;
 }
+.resourceIntro {
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px auto;
+  width: 90%;
+}
+.resourceIntro p {
+  font-size: 1.8rem;
+}
 .resourceList {
   display: flex;
   flex-direction: column;
@@ -189,5 +198,7 @@ footer a {
 }
 .resourceList .resourceRight h2 {
   text-align: right;
-  margin-right: 15px;
+}
+.headerImg {
+  width: 100%;
 }
