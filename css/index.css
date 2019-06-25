@@ -244,7 +244,8 @@ footer .social-icons a {
   }
 }
 .resourceList .resourceRight img {
-  width: 45%;
+  width: 75%;
+  margin: 0 auto;
 }
 .resourceList .resourceLeft {
   display: flex;
@@ -266,7 +267,13 @@ footer .social-icons a {
   }
 }
 .resourceList .resourceLeft img {
-  width: 45%;
+  width: 75%;
+  padding-left: 25%;
+}
+@media (max-width: 500px) {
+  .resourceList .resourceLeft img {
+    padding-left: 0;
+  }
 }
 .headerImg {
   width: 100%;
