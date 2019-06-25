@@ -149,12 +149,23 @@ nav .nav-items a {
   margin-left: 1.5em;
   margin-right: 1.5em;
 }
+html,
+body {
+  height: 100%;
+}
 html {
   font-size: 62.5%;
+}
+body {
+  display: flex;
+  flex-direction: column;
 }
 .header-img {
   width: 100%;
   height: 250px;
+}
+.site-wrapper {
+  flex: 1 0 auto;
 }
 section {
   display: flex;
@@ -193,6 +204,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-shrink: 0;
   padding-top: 60px;
   padding-bottom: 60px;
   background: black;
