@@ -147,11 +147,27 @@ nav {
   justify-content: space-between;
   margin: 1.5rem 1.5rem 3rem 1.5rem;
 }
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+  }
+}
 nav img {
   max-width: 20%;
 }
+@media (max-width: 500px) {
+  nav img {
+    max-width: 80%;
+  }
+}
 nav .nav-items {
   display: flex;
+}
+@media (max-width: 500px) {
+  nav .nav-items {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 nav .nav-items a {
   font-size: 2.2em;
@@ -159,6 +175,13 @@ nav .nav-items a {
   color: #0088ff;
   margin-left: 3rem;
   margin-right: 3rem;
+}
+@media (max-width: 500px) {
+  nav .nav-items a {
+    margin-top: 5.5%;
+    padding-bottom: 2.5%;
+    border-bottom: 1px solid #0088ff;
+  }
 }
 footer {
   font-size: 1.6em;
