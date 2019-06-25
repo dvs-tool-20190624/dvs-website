@@ -236,6 +236,11 @@ footer .social-icons a {
 section {
   display: flex;
 }
+@media (max-width: 500px) {
+  section {
+    flex-direction: column;
+  }
+}
 section .subheading {
   display: flex;
   justify-content: center;
