@@ -183,12 +183,14 @@ footer .social-icons a {
 .resourceIntro {
   display: flex;
   justify-content: flex-start;
-  margin: 20px auto;
+  margin: 20px auto 0;
   width: 90%;
 }
 .resourceIntro p {
   font-size: 1.8rem;
   color: #262626;
+  padding-bottom: 30px;
+  border-bottom: 1px solid black;
 }
 .resourceList {
   display: flex;
@@ -199,12 +201,13 @@ footer .social-icons a {
 .resourceList h2 {
   font-size: 3rem;
   margin-bottom: 10px;
+  margin-top: 20px;
 }
 .resourceList h2 a {
   color: #06059e;
 }
 .resourceList div {
-  margin: 10px 10px 40px;
+  margin: 0 10px 30px;
   width: 90%;
 }
 .resourceList div p {
