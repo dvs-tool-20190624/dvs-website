@@ -1,0 +1,71 @@
+.header-img {
+  width: 100%;
+  height: auto;
+}
+
+.site-wrapper {
+  flex: 1 0 auto;
+}
+
+section {
+  display: flex;
+
+  .subheading{
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+  }
+  h2 {
+    font-size: 2.4em;
+    font-family: 'Open Sans', sans-serif;
+    color: @fdarkGrey;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    // outline: red solid 2px;
+    font-size: 1.8em;
+    font-family: 'EB Garamond',sans-serif;
+    color: @fdarkGrey;
+    line-height: 3.6rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8rem;
+  margin-top: 5rem;
+
+  font-size: 2.8em;
+  font-family: 'Open Sans',sans-serif;
+
+  a {
+    background: black;
+    border-radius: .2rem;
+    padding: 2rem 3rem;
+    color: white;
+    animation: btn-glow-reverse 300ms;
+  }
+
+  a:hover {
+    animation: btn-glow 300ms forwards;
+  }
+
+
+  @keyframes btn-glow {
+    0% {box-shadow: 0 0 0 @flightBlue;}
+    40% {box-shadow: 0 0 .5rem @flightBlue;}
+    60% {box-shadow: 0 0 1rem @flightBlue;}
+    100% {box-shadow: 0 0 1.5rem @flightBlue;}
+  }
+  @keyframes btn-glow-reverse {
+    0% {box-shadow: 0 0 2.5rem @flightBlue;}
+    40% {box-shadow: 0 0 2rem @flightBlue;}
+    60% {box-shadow: 0 0 1rem @flightBlue;}
+    100% {box-shadow: 0 0 0 @flightBlue;}
+  }
+}
