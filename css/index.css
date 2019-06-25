@@ -308,6 +308,12 @@ section p {
 .about-page-body .header-photo {
   width: 100%;
 }
+@media (max-width: 800px) {
+  .about-page-body .header-photo {
+    width: 98%;
+    margin-left: 1%;
+  }
+}
 @media (max-width: 500px) {
   .about-page-body .header-photo {
     width: 90%;
@@ -320,6 +326,11 @@ section p {
   justify-content: center;
   margin-top: 5%;
   color: #06059E;
+}
+@media (max-width: 800px) {
+  .about-page-body h1 {
+    font-size: 5rem;
+  }
 }
 @media (max-width: 500px) {
   .about-page-body h1 {
@@ -336,6 +347,11 @@ section p {
   margin-top: 5%;
   margin-bottom: 5%;
 }
+@media (max-width: 800px) {
+  .about-page-body h2 {
+    font-size: 3rem;
+  }
+}
 @media (max-width: 500px) {
   .about-page-body h2 {
     font-size: 2rem;
@@ -347,18 +363,20 @@ section p {
   justify-content: space-between;
   border-top: 5px solid black;
   padding-top: 5%;
-  border: 2px solid red;
 }
 .about-page-body .UI-Devs .dev {
   width: 98%;
-  height: 380px;
   display: flex;
+}
+@media (max-width: 800px) {
+  .about-page-body .UI-Devs .dev {
+    height: 40%;
+  }
 }
 @media (max-width: 500px) {
   .about-page-body .UI-Devs .dev {
     flex-direction: column;
     height: 35%;
-    border: 2px solid red;
   }
 }
 .about-page-body .UI-Devs h3 {
@@ -388,6 +406,11 @@ section p {
   height: 90%;
   border-radius: 50%;
 }
+@media (max-width: 800px) {
+  .about-page-body .photo4 {
+    width: 90%;
+  }
+}
 @media (max-width: 500px) {
   .about-page-body .photo4 {
     width: 60%;
@@ -396,6 +419,11 @@ section p {
 }
 .about-page-body .photo-struggle {
   width: 80%;
+}
+@media (max-width: 800px) {
+  .about-page-body .photo-struggle {
+    width: 80%;
+  }
 }
 .about-page-body .photo2 {
   width: 100%;
@@ -413,10 +441,16 @@ section p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px;
+  padding: 5%;
+}
+@media (max-width: 800px) {
+  .about-page-body .name-description {
+    width: 65%;
+  }
 }
 @media (max-width: 500px) {
   .about-page-body .name-description {
+    width: 100%;
     padding: none;
   }
 }
