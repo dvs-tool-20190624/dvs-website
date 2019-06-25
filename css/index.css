@@ -205,16 +205,17 @@ footer {
   flex-direction: column;
   align-items: center;
   flex-shrink: 0;
-  padding-top: 60px;
+  padding-top: 70px;
   padding-bottom: 60px;
   background: black;
   color: white;
 }
-footer .nav-items {
+footer .social-icons {
   margin-bottom: 50px;
 }
 footer a {
   color: white;
-  margin-left: 5px;
-  margin-right: 5px;
+  font-size: 1.4em;
+  margin-left: 6px;
+  margin-right: 6px;
 }
