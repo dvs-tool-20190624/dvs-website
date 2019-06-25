@@ -188,6 +188,7 @@ footer .social-icons a {
 }
 .resourceIntro p {
   font-size: 1.8rem;
+  color: #262626;
 }
 .resourceList {
   display: flex;
@@ -208,6 +209,8 @@ footer .social-icons a {
 }
 .resourceList div p {
   color: #262626;
+  font-size: 1.8rem;
+  margin: 0 auto;
 }
 .resourceList .resourceRight {
   justify-content: flex-end;
