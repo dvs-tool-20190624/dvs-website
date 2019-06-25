@@ -130,6 +130,9 @@ a {
   text-decoration: none;
   color: black;
 }
+html {
+  font-size: 62.5%;
+}
 nav {
   display: flex;
   align-items: center;
@@ -153,6 +156,7 @@ html,
 body {
   height: 100%;
 }
+<<<<<<< HEAD
 html {
   font-size: 62.5%;
 }
@@ -235,6 +239,8 @@ section p {
     box-shadow: 0 0 0 #0088ff;
   }
 }
+=======
+>>>>>>> c92456f985d58798ccfcfeb1e3ef15804b1c6656
 footer {
   font-size: 1.6em;
   color: white;
@@ -254,4 +260,47 @@ footer .social-icons a {
   font-size: 1.4em;
   margin-left: 0.6rem;
   margin-right: 0.6re;
+}
+.resourceIntro {
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px auto;
+  width: 90%;
+}
+.resourceIntro p {
+  font-size: 1.8rem;
+}
+.resourceList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.8rem;
+}
+.resourceList h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.resourceList h2 a {
+  color: #06059e;
+}
+.resourceList div {
+  margin: 10px 10px 40px;
+  width: 90%;
+}
+.resourceList div p {
+  color: #262626;
+}
+.resourceList .resourceRight {
+  justify-content: flex-end;
+}
+.resourceList .resourceRight h2 {
+  text-align: right;
+}
+@media (max-width: 800px) {
+  .resourceList .resourceRight h2 {
+    text-align: left;
+  }
+}
+.headerImg {
+  width: 100%;
 }
