@@ -347,6 +347,7 @@ section p {
   justify-content: space-between;
   border-top: 5px solid black;
   padding-top: 5%;
+  border: 2px solid red;
 }
 .about-page-body .UI-Devs .dev {
   width: 98%;
@@ -356,6 +357,8 @@ section p {
 @media (max-width: 500px) {
   .about-page-body .UI-Devs .dev {
     flex-direction: column;
+    height: 35%;
+    border: 2px solid red;
   }
 }
 .about-page-body .UI-Devs h3 {
@@ -376,7 +379,7 @@ section p {
 }
 @media (max-width: 500px) {
   .about-page-body .photo1 {
-    width: 60%;
+    width: 80%;
     margin-left: 20%;
   }
 }
