@@ -137,13 +137,13 @@ nav {
   margin: 1.5rem 1.5rem 3rem 1.5rem;
 }
 nav img {
-  max-width: 25%;
+  max-width: 20%;
 }
 nav .nav-items {
   display: flex;
 }
 nav .nav-items a {
-  font-size: 2.4em;
+  font-size: 2.2em;
   font-family: sans-serif;
   color: #0088ff;
   margin-left: 3rem;
@@ -177,12 +177,15 @@ section .subheading {
 section h2 {
   font-size: 2.4em;
   font-family: 'Open Sans', sans-serif;
+  color: #262626;
   margin-top: 4rem;
   margin-bottom: 2rem;
 }
 section p {
   font-size: 1.8em;
   font-family: 'EB Garamond', sans-serif;
+  color: #262626;
+  line-height: 3.6rem;
   margin-left: 1rem;
   margin-right: 1rem;
 }
