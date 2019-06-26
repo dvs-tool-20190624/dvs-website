@@ -440,6 +440,7 @@ section p {
 .about-page-body .about-page-main .UI-Devs {
   display: flex;
   flex-direction: column;
+  padding-top: 3%;
   border-top: 5px solid black;
 }
 .about-page-body .about-page-main .UI-Devs .dev {
@@ -492,18 +493,30 @@ section p {
   width: 60%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .about-page-body .about-page-main .hawke-photo {
+    width: 90%;
+    padding-right: 0%;
+  }
+}
 .about-page-body .about-page-main .photo1 {
   width: 100%;
   border-radius: 50%;
 }
 @media (max-width: 500px) {
   .about-page-body .about-page-main .photo1 {
-    width: 65%;
-    margin-left: 20%;
+    width: 83%;
+    margin-left: 16%;
   }
 }
 .about-page-body .about-page-main .neha-photo {
   width: 70%;
+}
+@media (max-width: 500px) {
+  .about-page-body .about-page-main .neha-photo {
+    width: 90%;
+    padding-right: 0%;
+  }
 }
 .about-page-body .about-page-main .photo2 {
   width: 90%;
@@ -517,8 +530,8 @@ section p {
 }
 @media (max-width: 500px) {
   .about-page-body .about-page-main .photo2 {
-    width: 60%;
-    margin-left: 20%;
+    width: 80%;
+    margin-left: 15%;
   }
 }
 .about-page-body .about-page-main .photo3 {
