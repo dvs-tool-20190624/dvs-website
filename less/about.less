@@ -1,7 +1,8 @@
 .about-page-body{
-    margin: 0 auto;
-    max-width: 1000px;
+    // margin: 0 auto;
+    // max-width: 1000px;
 
+    
 
        .header-photo{
            width: 100%;
@@ -34,7 +35,12 @@
         }
     }
 
+    .about-page-main{
+        margin: 0 auto;
+        max-width: 1000px;
+
     .developers{
+        display:flex;
         flex-direction: column;
 
     }
@@ -58,15 +64,14 @@
     .UI-Devs {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        padding-top: 3%;
         border-top: 5px solid black;
-        padding-top: 5%;
 
 
     .dev {
         //border: 1px solid red;
-        width:98%;
-        display: flex;
+        display:flex;
+        justify-content: space-between;
 
         @media @tablet {
             height: 40%; 
@@ -75,6 +80,7 @@
         @media @mobile {
            flex-direction: column; 
            height: 35%;
+
         }
 
         }
@@ -82,6 +88,7 @@
         h3 {
             font-size: 1.7rem;
             margin-bottom: 3%;
+            margin-left: 5%;
 
             @media @mobile {
                 text-align: center;
@@ -90,22 +97,61 @@
 
         p {
             font-size: 1.4rem;
+            margin-left: 5%;
         }
+
+        .name-description{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 1%;
+            //border: 1px solid red;
+            //width: 100%;
+    
+    
+            @media @tablet {
+                width: 65%;
+               }
+    
+            @media @mobile {
+                width:100%;
+                padding: none;
+            }
+        
+        }
+
        
     }
+    .hawke-photo{
+        width: 60%;
+        padding-right: 1%;
+
+        @media @mobile {
+            width: 90%;
+            padding-right: 0%;
+        }
+    }
     .photo1{
-        width: 90%;
+        width: 100%;
         border-radius: 50%;
 
 
         @media @mobile {
-            width: 80%;
-            margin-left: 20%;
+            width: 83%;
+            margin-left: 16%;
         }
         
     }
-    .photo4{
-         width: 75%;
+    .neha-photo {
+        width: 70%;
+
+        @media @mobile {
+            width: 90%;
+            padding-right: 0%;
+        }
+    }
+    .photo2{
+         width: 90%;
          margin-left: 5%;
         border-radius: 50%;
 
@@ -114,23 +160,15 @@
            }
 
         @media @mobile {
-            width: 60%;
+            width: 80%;
             // height: 90%;
-            margin-left: 20%;
+            margin-left: 15%;
         }
         
     }
 
-    .photo-struggle{
-        width: 80%;
 
-        @media @tablet {
-            width: 80%;
-           }
-    }
-
-
-    .photo2{
+    .photo3{
         width: 100%;
         border-radius: 50%;
 
@@ -143,25 +181,6 @@
         }
     }
 
-
-    .name-description{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 1%;
-        //border: 1px solid red;
-
-
-        @media @tablet {
-            width: 65%;
-           }
-
-        @media @mobile {
-            width:100%;
-            padding: none;
-        }
-    
-    }
 
     .dev2{
         flex-direction: row-reverse;
@@ -199,11 +218,17 @@
            margin: 5px;
        }
 
-       .photo3{
-           width: 80%;
+       .photo4{
+           width: 95%;
            border-radius: 50%;
-           margin-left: 10%;
+           margin-left: 3%;
        }
+       .photo5{
+        width: 90%;
+        border-radius: 50%;
+        margin-left: 7%;
     }
 
+    }
+}
 }
