@@ -4,6 +4,8 @@ nav {
   align-items: center;
   justify-content: space-between;
 
+
+
   margin: 1.5rem 1.5rem 3rem 1.5rem;
 
   @media @mobile {
@@ -35,7 +37,7 @@ nav {
       @media @mobile {
         margin-top: 5.5%;
         padding-bottom: 2.5%;
-        border-bottom: 1px solid @flightBlue;
+        border-bottom: .1rem solid @flightBlue;
       }
     }
   }
@@ -49,16 +51,29 @@ nav {
 
 }
 .menu-items {
+  // outline: red solid 1px;
   display: none;
-  position: fixed;
+  // position: fixed;
   top: 7.5rem;
   right: 0;
-  width: 35rem;
+  // width: 35rem;
+  width: 100%;
   background-color: white;
   border: none;
   border-left: none;
   border-bottom: none;
-  z-index: 2; /* This set the layer level of the element, it has precendence over initial level of 1*/
+
+  font-family: 'Open Sans', sans-serif;
+
+  .item-divider {
+    // margin-top: 5.5%;
+    padding-bottom: 2.5%;
+    border-bottom: .1rem solid @flightBlue;
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+
+  // z-index: 2; /* This set the layer level of the element, it has precendence over initial level of 1*/
   @media @mobile {
     margin:7rem auto 0;
     left: 0;
@@ -68,7 +83,7 @@ nav {
     li {
     list-style-type: none;
     font-size: 2.2rem;
-    padding: 30px 0;
+    padding: 3rem 0;
     text-align: center;
     a{
      color: @flightBlue;
@@ -79,5 +94,5 @@ nav {
 }
 
 .menu--open {
-  display: block;
+  display: inline-block;
 }
