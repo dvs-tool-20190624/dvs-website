@@ -34,10 +34,16 @@ menuBtn.addEventListener('click', toggleMenu, true);
 let button = document.querySelector('.btn');
 console.log(button);
 
-let glow = () => {button.classList.toggle('btn-hover')};
-let unglow = () => {button.classList.toggle('btn-leave')};
+let glow = () => {
+  button.classList.add('btn-hover')
+  button.classList.remove('btn-leave')
+};
+
+let unglow = () => {
+  button.classList.add('btn-leave')
+  button.classList.remove('btn-hover')
+};
 
 button.addEventListener('mouseover', glow);
-console.log();
-button.addEventListener('mouseout', unglow);
-console.log();
+console.log(button.addEventListener('mouseover', glow));
+console.log(button.classList);
