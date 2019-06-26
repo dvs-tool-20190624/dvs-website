@@ -31,3 +31,13 @@ menuBtn.addEventListener('click', toggleMenu, true);
 
 
 // Button Hover Effect (Hawke)
+let button = document.querySelector('.btn');
+console.log(button);
+
+let glow = () => {button.classList.toggle('btn-hover')};
+let unglow = () => {button.classList.toggle('btn-leave')};
+
+button.addEventListener('mouseover', glow);
+console.log();
+button.addEventListener('mouseout', unglow);
+console.log();
