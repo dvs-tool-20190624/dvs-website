@@ -45,4 +45,39 @@ nav {
     padding: 10px;
     display: none;
   }
+
+
+}
+.menu-items {
+  display: none;
+  position: fixed;
+  top: 75px;
+  right: 0;
+  width: 350px;
+  background-color: white;
+  border: none;
+  border-left: none;
+  border-bottom: none;
+  z-index: 2; /* This set the layer level of the element, it has precendence over initial level of 1*/
+  @media @mobile {
+    margin:70px auto 0;
+    left: 0;
+  }
+
+  ul{
+    li {
+    list-style-type: none;
+    font-size: 2.2rem;
+    padding: 30px 0;
+    text-align: center;
+    a{
+     color: @flightBlue; 
+    }
+    
+    }
+  }
+}
+
+.menu--open {
+  display: block;
 }
