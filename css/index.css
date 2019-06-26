@@ -216,6 +216,7 @@ nav .menuBtn {
   .menu-items {
     margin: 70px auto 0;
     left: 0;
+    position: absolute;
   }
 }
 .menu-items ul li {
@@ -443,8 +444,8 @@ section p {
 }
 @media (max-width: 500px) {
   .about-page-body .header-photo {
-    width: 90%;
-    margin-left: 5%;
+    width: 100%;
+    margin-left: 0%;
   }
 }
 .about-page-body h1 {
