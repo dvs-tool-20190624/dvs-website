@@ -163,6 +163,11 @@ nav img {
 nav .nav-items {
   display: flex;
 }
+@media (max-width: 800px) {
+  nav .nav-items {
+    display: none;
+  }
+}
 @media (max-width: 500px) {
   nav .nav-items {
     flex-direction: column;
@@ -188,6 +193,11 @@ nav .menuBtn {
   color: #0088ff;
   padding: 10px;
   display: none;
+}
+@media (max-width: 800px) {
+  nav .menuBtn {
+    display: inline-block;
+  }
 }
 .menu-items {
   display: none;
@@ -218,7 +228,12 @@ nav .menuBtn {
   color: #0088ff;
 }
 .menu--open {
-  display: block;
+  display: none;
+}
+@media (max-width: 800px) {
+  .menu--open {
+    display: block;
+  }
 }
 footer {
   font-size: 1.6em;
