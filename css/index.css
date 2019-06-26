@@ -194,6 +194,11 @@ nav .menuBtn {
   padding: 10px;
   display: none;
 }
+@media (max-width: 800px) {
+  nav .menuBtn {
+    display: inline-block;
+  }
+}
 .menu-items {
   display: none;
   position: fixed;
