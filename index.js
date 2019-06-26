@@ -1,4 +1,3 @@
-
 function navDrop(tabletView){
     if(tabletView.matches) {
         nav.style.display = "none";
@@ -15,11 +14,11 @@ const toggleMenu = () => {
     menuItems.classList.toggle('menu--open');
 }
 
-let tabletView = window.matchMedia("(max-width: 800px)");
-tabletView.addListener(navDrop);
+// let tabletView = window.matchMedia("(max-width: 800px)");
+// tabletView.addListener(navDrop);
 
-let nav = document.querySelector('.nav-items');
-// console.log(nav);
+// let nav = document.querySelector('.nav-items');
+// // console.log(nav);
 
 const menuItems = document.querySelector('.menu-items');
 // console.log(menuItems);

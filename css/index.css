@@ -163,6 +163,11 @@ nav img {
 nav .nav-items {
   display: flex;
 }
+@media (max-width: 800px) {
+  nav .nav-items {
+    display: none;
+  }
+}
 @media (max-width: 500px) {
   nav .nav-items {
     flex-direction: column;
@@ -188,6 +193,11 @@ nav .menuBtn {
   color: #0088ff;
   padding: 10px;
   display: none;
+}
+@media (max-width: 800px) {
+  nav .menuBtn {
+    display: inline-block;
+  }
 }
 .menu-items {
   display: none;
@@ -218,7 +228,12 @@ nav .menuBtn {
   color: #0088ff;
 }
 .menu--open {
-  display: block;
+  display: none;
+}
+@media (max-width: 800px) {
+  .menu--open {
+    display: block;
+  }
 }
 footer {
   font-size: 1.6em;
@@ -529,8 +544,9 @@ section p {
 }
 @media (max-width: 500px) {
   .about-page-body .about-page-main .UI-Devs .name-description {
-    width: 100%;
+    width: 90%;
     padding: none;
+    text-align: center;
   }
 }
 .about-page-body .about-page-main .hawke-photo {
@@ -618,6 +634,11 @@ section p {
 .about-page-body .about-page-main .bottom-dev p {
   font-size: 1.4rem;
   margin: 5px;
+}
+@media (max-width: 500px) {
+  .about-page-body .about-page-main .bottom-dev p {
+    text-align: center;
+  }
 }
 .about-page-body .about-page-main .bottom-dev .photo4 {
   width: 95%;
