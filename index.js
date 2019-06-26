@@ -1,10 +1,7 @@
-
 function navDrop(tabletView){
     if(tabletView.matches) {
         nav.style.display = "none";
         menuBtn.style.display = "inline-block";
-
-        
     } else {
         nav.style.display ="";
         menuBtn.style.display = "";
