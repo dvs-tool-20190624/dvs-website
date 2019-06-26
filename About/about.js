@@ -1,50 +1,6 @@
 //need to obtain info about each member of my team.
 //place those things in an object and us DOM manipulation to replace text on the about page.
 
-// class TeamMembers {
-//     constructor(teamMember){
-//         this.teamMember = teamMember.teamMember
-//         this.lambda = teamMember.lambda
-//         this.hobbie = teamMember.hobbie
-//         this.work = teamMember.work
-//     }
-// }
-
-// let jason = new TeamMembers ({
-//     teamMember: 'Jason'
-//     lambda: 
-//     hobbie:
-//     work:
-// })
-
-// let neha = new TeamMembers ({
-//     teamMember: 'Neha'
-//     lambda: 
-//     hobbie:
-//     work:
-// })
-
-// let hawke = new TeamMembers ({
-//     teamMember: 'Hawke'
-//     lambda: 
-//     hobbie:
-//     work:
-// })
-
-// let mindy = new TeamMembers ({
-//     teamMember: 'Mindy'
-//     lambda: 
-//     hobbie:
-//     work:
-// })
-
-// let hannah = new TeamMembers ({
-//     teamMember: 'Hannah';
-//     lambda: ""
-//     hobbie:
-//     work:
-// })
-
 //1. Short Bio about yourself. 1 to 2 sentences.
 //2. Why lambda?
 //3. favorite hobby?
