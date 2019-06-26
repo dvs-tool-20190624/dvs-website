@@ -4,7 +4,7 @@ function navDrop(tabletView){
         nav.style.display = "none";
         menuBtn.style.display = "inline-block";
 
-        
+
     } else {
         nav.style.display ="";
         menuBtn.style.display = "";
@@ -27,3 +27,7 @@ const menuItems = document.querySelector('.menu-items');
 let menuBtn = document.querySelector('.menuBtn');
 menuBtn.addEventListener('click', toggleMenu, true);
 // console.log(menuBtn);
+
+
+
+// Button Hover Effect (Hawke)

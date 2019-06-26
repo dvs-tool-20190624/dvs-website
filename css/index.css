@@ -389,10 +389,12 @@ section p {
   border-radius: 0.2rem;
   padding: 2rem 3rem;
   color: white;
-  animation: btn-glow-reverse 400ms;
 }
-.btn a:hover {
+.btn .btn-hover {
   animation: btn-glow 300ms forwards;
+}
+.btn .btn-leave {
+  animation: btn-glow-reverse 400ms;
 }
 @keyframes btn-glow {
   0% {
