@@ -77,9 +77,54 @@
 
 //     const biography = document.querySelectorAll(".bio")
     
-const largeText = document.querySelectorAll(".dev")
-largeText.forEach((n) => {
-    n.addEventListener('click', event => {
+const largeText = document.querySelectorAll(".name-description")
+largeText.forEach((lText) => {
+    lText.addEventListener('mouseover', event => {
         event.target.style.transform = 'scale(1.1)'
     })
 })
+largeText.forEach((rText) => {
+    rText.addEventListener('mouseleave', event => {
+    event.target.style.transform = 'scale(1)'
+})
+})
+
+// largeText.forEach((width) => {
+//     width.addEventListener('mouseover', event => {
+//         event.target.style.width = '90%'
+//     })
+// })
+
+// largeText.forEach((width) => {
+//     width.addEventListener('mouseleave', event => {
+//         event.target.style.width = '100%'
+//     })
+// })
+
+const largetext = document.querySelectorAll('.font-enlarge')
+largetext.forEach((lText) => {
+    lText.addEventListener('mouseover', event => {
+        event.target.style.transform = 'scale(1.1)'
+    })
+})
+
+largetext.forEach((rText) => {
+    rText.addEventListener('mouseleave', event => {
+    event.target.style.transform = 'scale(.95)'
+})
+})
+
+largetext.forEach((width) => {
+    width.addEventListener('mouseover', event => {
+        event.target.style.width = '90%'
+        event.target.style.marginLeft = '5%'
+        event.target.style.marginright = '5%'
+    })
+})
+
+largetext.forEach((width) => {
+    width.addEventListener('mouseleave', event => {
+        event.target.style.width = '100%'
+    })
+})
+
