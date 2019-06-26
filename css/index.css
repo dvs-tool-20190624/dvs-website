@@ -203,8 +203,6 @@ nav .menuBtn {
 .menu-items .item-divider {
   padding-bottom: 2.5%;
   border-bottom: 0.1rem solid #0088ff;
-  padding-left: 25%;
-  padding-right: 25%;
 }
 @media (max-width: 500px) {
   .menu-items {
