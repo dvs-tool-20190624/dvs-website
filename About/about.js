@@ -9,7 +9,7 @@
 //6. favorite sport/sports team?
 
 let teamMember = {
-    "hawke": {"name":"Hawk",
+    "hawke": {"name":"Hawke",
     "bio":"I spend a lot of time thinking about design and how things look. I live a pretty minimalist life, and when I'm not at a computer, I love to do anything involving bikes.",
     "lambda":"the short minimal risk was a huge draw for me, and I'm always one to try alternatives to the norm.",
     "hobby":"I like to create mixtapes on cassette in my freetime, as well as bootleg tape releases for my favorite Albums" },
@@ -42,17 +42,21 @@ const bio = document.querySelectorAll('.name-description p')
 
  const bottomDevBio = document.querySelectorAll(".bottom-developers p")
  //bottomDevBio[0].textContent = `"${teamMember['jason']['bio']}"`
- bottomDevBio[1].textContent = `"${teamMember['mindy']['bio']}"`
+ bottomDevBio[1].textContent = `"${teamMember['mindy']['bio']}"\n "I chose Lambda School because ${teamMember['mindy']['lambda']}"`
     
 const largeText = document.querySelectorAll(".name-description")
 largeText.forEach((lText) => {
     lText.addEventListener('mouseover', event => {
         event.target.style.transform = 'scale(1.1)'
+        event.target.style.marginRight = "7%"
+        event.target.style.paddingLeft = "2%"
     })
 })
 largeText.forEach((rText) => {
     rText.addEventListener('mouseleave', event => {
     event.target.style.transform = 'scale(1)'
+    event.target.style.marginRight = "0%"
+    event.target.style.paddingLeft = "2%"
 })
 })
 
