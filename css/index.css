@@ -183,6 +183,11 @@ nav .nav-items a {
     border-bottom: 1px solid #0088ff;
   }
 }
+nav .menu {
+  font-size: 3rem;
+  color: #0088ff;
+  padding: 10px;
+}
 footer {
   font-size: 1.6em;
   color: white;
