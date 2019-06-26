@@ -203,98 +203,102 @@ footer .social-icons a {
   margin-left: 0.6rem;
   margin-right: 0.6re;
 }
-.resourceIntro {
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+main .resourceIntro {
   display: flex;
   justify-content: flex-start;
   margin: 20px auto 0;
   width: 90%;
 }
-.resourceIntro p {
+main .resourceIntro p {
   font-size: 1.8rem;
   color: #262626;
   padding-bottom: 30px;
   border-bottom: 1px solid black;
 }
-.resourceList {
+main .resourceList {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 1.8rem;
 }
-.resourceList h2 {
+main .resourceList h2 {
   font-size: 3rem;
   margin-bottom: 10px;
   margin-top: 20px;
 }
-.resourceList h2 a {
+main .resourceList h2 a {
   color: #06059e;
 }
-.resourceList div {
+main .resourceList div {
   margin: 0 10px 30px;
   width: 90%;
 }
-.resourceList div p {
+main .resourceList div p {
   color: #262626;
   font-size: 1.8rem;
   margin: 0 auto;
 }
-.resourceList .resourceRight {
+main .resourceList .resourceRight {
   justify-content: flex-end;
   display: flex;
   align-items: center;
 }
 @media (max-width: 500px) {
-  .resourceList .resourceRight {
+  main .resourceList .resourceRight {
     flex-direction: column-reverse;
   }
 }
-.resourceList .resourceRight div {
+main .resourceList .resourceRight div {
   flex-direction: row;
   width: 45%;
   justify-content: space-between;
 }
 @media (max-width: 500px) {
-  .resourceList .resourceRight div {
+  main .resourceList .resourceRight div {
     width: 95%;
   }
 }
-.resourceList .resourceRight h2 {
+main .resourceList .resourceRight h2 {
   text-align: right;
 }
 @media (max-width: 800px) {
-  .resourceList .resourceRight h2 {
+  main .resourceList .resourceRight h2 {
     text-align: left;
   }
 }
-.resourceList .resourceRight img {
+main .resourceList .resourceRight img {
   width: 75%;
   margin: 0 auto;
 }
-.resourceList .resourceLeft {
+main .resourceList .resourceLeft {
   display: flex;
   align-items: center;
 }
 @media (max-width: 500px) {
-  .resourceList .resourceLeft {
+  main .resourceList .resourceLeft {
     flex-direction: column;
   }
 }
-.resourceList .resourceLeft div {
+main .resourceList .resourceLeft div {
   flex-direction: row;
-  width: 45%;
+  width: 48%;
   justify-content: space-between;
 }
 @media (max-width: 500px) {
-  .resourceList .resourceLeft div {
+  main .resourceList .resourceLeft div {
     width: 95%;
   }
 }
-.resourceList .resourceLeft img {
+main .resourceList .resourceLeft img {
   width: 75%;
   padding-left: 25%;
 }
 @media (max-width: 500px) {
-  .resourceList .resourceLeft img {
+  main .resourceList .resourceLeft img {
     padding-left: 0;
   }
 }
