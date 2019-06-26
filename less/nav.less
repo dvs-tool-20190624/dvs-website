@@ -20,6 +20,10 @@ nav {
   .nav-items {
     display: flex;
 
+    @media @tablet {
+      display:none;
+    }
+
     @media @mobile {
       flex-direction: column;
       text-align: center;
@@ -44,6 +48,9 @@ nav {
     color: @flightBlue;
     padding: 10px;
     display: none;
+    @media @tablet {
+      display: inline-block;
+    }
   }
 
 
@@ -79,5 +86,8 @@ nav {
 }
 
 .menu--open {
-  display: block;
+  display: none;
+  @media @tablet {
+    display:block;
+  }
 }
