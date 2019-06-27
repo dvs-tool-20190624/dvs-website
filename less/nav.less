@@ -57,7 +57,7 @@ nav {
 }
 .menu-items {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 75px;
   right: 0;
   width: 350px;
@@ -66,9 +66,13 @@ nav {
   border-left: none;
   border-bottom: none;
   z-index: 2; /* This set the layer level of the element, it has precendence over initial level of 1*/
+
+
   @media @mobile {
+    width: 100%;
     margin:70px auto 0;
     left: 0;
+    position: absolute;
   }
 
   ul{
