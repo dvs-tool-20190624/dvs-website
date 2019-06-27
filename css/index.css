@@ -214,6 +214,7 @@ nav .menuBtn {
 }
 @media (max-width: 500px) {
   .menu-items {
+    width: 100%;
     margin: 70px auto 0;
     left: 0;
   }
