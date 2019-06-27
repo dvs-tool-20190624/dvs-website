@@ -31,7 +31,10 @@ main {
     }
     div {
         margin:0 10px 30px;
-        width: 90%;
+        width: 90%; 
+        @media @tablet {
+            width: auto;
+        }
 
         p {
             color: @fdarkGrey;
@@ -57,7 +60,7 @@ main {
             
         h2 {
             text-align: right;
-            @media @tablet{
+            @media @mobile{
                 text-align: left;
             }
         }
