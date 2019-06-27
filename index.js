@@ -27,16 +27,22 @@ let menuBtn = document.querySelector('.menuBtn');
 menuBtn.addEventListener('click', toggleMenu, true);
 // console.log(menuBtn);
 
-
-
 // Button Hover Effect (Hawke)
-let button = document.querySelector('.btn');
+let button = document.querySelector('.da-real-btn');
 console.log(button);
 
-let glow = () => {button.classList.toggle('btn-hover')};
-let unglow = () => {button.classList.toggle('btn-leave')};
+let glow = () => {
+  console.log("LET THERE BE LIGHT!");
+  button.classList.add('btn-hover')
+  button.classList.remove('btn-leave')
+};
+
+let unglow = () => {
+  console.log("NO, GET THOSE LIGHTS OFF!");
+  button.classList.add('btn-leave')
+  button.classList.remove('btn-hover')
+};
 
 button.addEventListener('mouseover', glow);
-console.log();
 button.addEventListener('mouseout', unglow);
-console.log();
+console.log(button.classList);
