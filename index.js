@@ -9,22 +9,27 @@
 //         menuBtn.style.display = "";
 //     }
 // }
-
-const toggleMenu = () => {
-    menuItems.classList.toggle('menu--open');
-}
-
 // let tabletView = window.matchMedia("(max-width: 800px)");
 // tabletView.addListener(navDrop);
 
 // let nav = document.querySelector('.nav-items');
 // // console.log(nav);
 
+const toggleMenu = (event) => {
+  if(event.type === 'click'){
+    menuItems.classList.toggle('menu--open');
+}}
+
+
+
 const menuItems = document.querySelector('.menu-items');
 // console.log(menuItems);
 
 let menuBtn = document.querySelector('.menuBtn');
-menuBtn.addEventListener('click', toggleMenu, true);
+  menuBtn.addEventListener('click', (event) => {
+    toggleMenu(event);
+    console.log(event.type)
+  });
 // console.log(menuBtn);
 
 // Button Hover Effect (Hawke)
