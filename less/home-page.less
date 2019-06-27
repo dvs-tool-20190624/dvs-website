@@ -105,23 +105,6 @@ section {
     60% {box-shadow: 0 0 .5rem @flightBlue;}
     100% {box-shadow: 0 0 0 @flightBlue;}
   }
-
-  .esc { animation: esc 300ms forwards;}
-  .esc-re { animation: esc-reverse 400ms;}
-
-  @keyframes esc-glow {
-    0% {box-shadow: 0 0 0 @forange;}
-    40% {box-shadow: 0 0 .5rem @forange;}
-    60% {box-shadow: 0 0 1rem @forange;}
-    100% {box-shadow: 0 0 1.5rem @forange;}
-  }
-  @keyframes esc-reverse {
-    0% {box-shadow: 0 0 1.5rem @forange;}
-    40% {box-shadow: 0 0 1rem @forange;}
-    60% {box-shadow: 0 0 .5rem @forange;}
-    100% {box-shadow: 0 0 0 @forange;}
-  }
-
 }
 
 .esc-parent {
@@ -133,7 +116,6 @@ section {
   bottom: 0;
   right: 0;
   user-select: none;
-  opacity: 0.5;
 
   .escape-btn {
     display: flex;
@@ -144,6 +126,9 @@ section {
     margin-right: 1.5rem;
     margin-bottom: 1.5rem;
     border-radius: 1rem;
+    opacity: 0.7;
+    box-shadow: 0 0 1rem @forange;
+
     .safety-esc {
       font-size: 2.2em;
       color: @fdarkGrey;

@@ -479,40 +479,6 @@ section p {
     box-shadow: 0 0 0 #0088ff;
   }
 }
-.btn .esc {
-  animation: esc 300ms forwards;
-}
-.btn .esc-re {
-  animation: esc-reverse 400ms;
-}
-@keyframes esc-glow {
-  0% {
-    box-shadow: 0 0 0 #ff7b00;
-  }
-  40% {
-    box-shadow: 0 0 0.5rem #ff7b00;
-  }
-  60% {
-    box-shadow: 0 0 1rem #ff7b00;
-  }
-  100% {
-    box-shadow: 0 0 1.5rem #ff7b00;
-  }
-}
-@keyframes esc-reverse {
-  0% {
-    box-shadow: 0 0 1.5rem #ff7b00;
-  }
-  40% {
-    box-shadow: 0 0 1rem #ff7b00;
-  }
-  60% {
-    box-shadow: 0 0 0.5rem #ff7b00;
-  }
-  100% {
-    box-shadow: 0 0 0 #ff7b00;
-  }
-}
 .esc-parent {
   display: flex;
   justify-content: flex-end;
@@ -521,7 +487,6 @@ section p {
   bottom: 0;
   right: 0;
   user-select: none;
-  opacity: 0.5;
 }
 .esc-parent .escape-btn {
   display: flex;
@@ -532,6 +497,8 @@ section p {
   margin-right: 1.5rem;
   margin-bottom: 1.5rem;
   border-radius: 1rem;
+  opacity: 0.7;
+  box-shadow: 0 0 1rem #ff7b00;
 }
 .esc-parent .escape-btn .safety-esc {
   font-size: 2.2em;

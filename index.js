@@ -48,29 +48,18 @@ button.addEventListener('mouseout', unglow);
 console.log(button.classList);
 
 // Escape Button JavaScript (Hawke)
-// let escape = document.querySelector('.safety-esc');
-// console.log(escape);
-//
-// let escGlow = () => {
-//   console.log("Esacping");
-//   escape.classList.add('esc')
-//   escape.classList.remove('esc-re')
-// }
-// let escUnglow = () => {
-//   console.log("false alarm");
-//   escape.classList.add('esc-re')
-//   escape.classList.remove('esc')
-// }
-//
-// escape.addEventListener('mouseover', escGlow);
-// escape.addEventListener('mouseout', escUnglow);
 
 let page = document.querySelector('html');
 let escBtn = document.querySelector('.escape-btn');
 let safe = () => {
-  console.log("safe now.")
   window.open("https://www.google.com","_self")
 };
 
+let safeKey = (e) => {
+  if(e.key === 'Escape') {
+    window.open("https://www.google.com","_self")
+  }
+};
+
 escBtn.addEventListener('click', safe);
-page.addEventListener('keyup', safe);
+page.addEventListener('keyup', safeKey);
