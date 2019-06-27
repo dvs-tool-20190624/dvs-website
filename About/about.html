@@ -34,8 +34,27 @@
         </ul>
     </div>
     <header>
-        <img class="header-photo" src="../img/aboutHeaderPhoto.jpg">
-
+    <!--added fromw3school -->
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img class="header-photo" src="../img/landing-img.jpg">
+                </div>
+                <div class="mySlides fade">
+                        <img class="header-photo" src="../img/aboutheadercropped3.jpg">
+                </div>
+                <div class="mySlides fade">
+                        <img class="header-photo" src="../img/croppedresourceheader.jpg">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                  </div>
+                  <!--added fromw3school -->
         <h1>About Us</h1>
     </header>
     <main class="about-page-main">
@@ -77,7 +96,7 @@
                             eu.</p>
                     </div>
                     <div class="photo">
-                        <img class="photo3" src="../img/7m2BUwiVTpWCy3rf7GB+oA_thumb_2.jpg">
+                        <img class="photo3" src="../img/hannah.jpg">
                     </div>
                 </div>
             </div>
@@ -106,6 +125,46 @@
             </div>
 
         </section>
+       <!-- possible tabs component--> 
+       <div class="section">
+            <div class="tabs">
+                <div class="tabs-links">
+                    <div class="tabs-link tabs-link-selected" data-tab="1">Hawke</div>
+                    <div class="tabs-link" data-tab="2">Neha</div>
+                    <div class="tabs-link" data-tab="3">Hannah</div>
+                    <div class="tabs-link" data-tab="4">Jason</div>
+                    <div class="tabs-link" data-tab="4">Mindy</div>
+                </div>
+                <div class="tabs-items">
+                    <div class="tabs-item tabs-item-selected" data-tab="1">
+                        <div class="github-icon">
+                            <img src='../img/GitHub-Mark-32px.png'>
+                        </div>
+                    </div>
+                    <div class="tabs-item" data-tab="2">
+                            <div class="github-icon">
+                                    <img src='../img/GitHub-Mark-32px.png'>
+                                </div>
+                    </div>
+                    <div class="tabs-item" data-tab="3">
+                            <div class="github-icon">
+                                    <img src='../img/GitHub-Mark-32px.png'>
+                                </div>
+                    </div>
+                    <div class="tabs-item" data-tab="4">
+                            <div class="github-icon">
+                                    <img src='../img/GitHub-Mark-32px.png'>
+                                </div>
+                    </div>
+                    <div class="tabs-item" data-tab="5">
+                            <div class="github-icon">
+                                    <img src='../img/GitHub-Mark-32px.png'>
+                                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- possible tabs component--> 
 
     </main>
     <footer>

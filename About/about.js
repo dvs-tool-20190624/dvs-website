@@ -1,3 +1,49 @@
+// //code from w3schools
+// var slideIndex = 1;
+// showSlides(slideIndex);
+
+// // Next/previous controls
+// function plusSlides(n) {
+//   showSlides(slideIndex += n);
+// }
+
+// // Thumbnail image controls
+// function currentSlide(n) {
+//   showSlides(slideIndex = n);
+// }
+
+// function showSlides(n) {
+//   var i;
+//   var slides = document.getElementsByClassName("mySlides");
+//   var dots = document.getElementsByClassName("dot");
+//   if (n > slides.length) {slideIndex = 1} 
+//   if (n < 1) {slideIndex = slides.length}
+//   for (i = 0; i < slides.length; i++) {
+//       slides[i].style.display = "none"; 
+//   }
+//   for (i = 0; i < dots.length; i++) {
+//       dots[i].className = dots[i].className.replace(" active", "");
+//   }
+//   slides[slideIndex-1].style.display = "block"; 
+//   dots[slideIndex-1].className += " active";
+// }
+//end of cose from w3schools
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1} 
+  slides[slideIndex-1].style.display = "block"; 
+  setTimeout(showSlides, 5750); 
+}
+
 //need to obtain info about each member of my team.
 //place those things in an object and us DOM manipulation to replace text on the about page.
 
@@ -88,3 +134,59 @@ largetext.forEach((width) => {
     })
 })
 
+
+// class TabLink {
+//     constructor(element) {
+//       // Assign this.element to the passed in DOM element
+//       this.element = element;
+//       //console.log('this is the class', this.element.dataset.tab)
+//       // Get the custom data attribute on the Link
+//       this.data = element.dataset.tab;
+      
+//       // Using the custom data attribute get the associated Item element
+//       this.itemElement = document.querySelector(`.tabs-item[data-tab='${this.data}']`);
+//       //console.log(this.itemElement)
+      
+//       // Using the Item element, create a new instance of the TabItem class
+//       this.tabItem = new TabItem(this.itemElement);
+//       //console.log(tabItem)
+//       // Add a click event listener on this instance, calling the select method on click
+//       this.element.addEventListener('click', () => this.select())
+  
+//     };
+  
+//     select() {
+//       // Get all of the elements with the tabs-link class
+//       const links = document.querySelectorAll('.tabs-link');
+  
+//       // Using a loop or the forEach method remove the 'tabs-link-selected' class from all of the links
+//       Array.from(links).forEach(item => item.classList.remove('tabs-link-selected'));
+  
+//       // Add a class named "tabs-link-selected" to this link
+//       this.element.classList.add('tabs-link-selected');
+      
+//       // Call the select method on the item associated with this link
+//       this.tabItem.select()
+//     }
+//   }
+  
+//   class TabItem {
+//     constructor(element) {
+//       // Assign this.element to the passed in element
+//       this.element = element;
+//     }
+  
+//     select() {
+//       // Select all ".tabs-item" elements from the DOM
+//       const items = document.querySelectorAll('.tabs-item');
+//       console.log('items', items)
+//       // Remove the class "tabs-item-selected" from each element
+//       Array.from(items).forEach(item => item.classList.remove('tabs-item-selected'));
+//       // Add a class named "tabs-item-selected" to this element
+//       this.element.classList.add('tabs-item-selected');
+//     }
+//   }
+  
+  
+//   links = document.querySelectorAll('.tabs-link').forEach(link => new TabLink(link));
+  
