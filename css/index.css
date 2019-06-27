@@ -729,6 +729,21 @@ section p {
   border-radius: 50%;
   margin-left: 7%;
 }
+.about-page-body .about-page-main .tabs-links {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 2rem;
+  margin-top: 5%;
+}
+.about-page-body .about-page-main .tabs-items {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 5%;
+}
+.hover-color {
+  border-radius: 50%;
+  box-shadow: 0 0 1.5rem #0088ff;
+}
 .mySlides {
   display: none;
 }
