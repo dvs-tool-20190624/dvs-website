@@ -363,9 +363,8 @@ main .resourceList .resourceLeft .logo-img img {
 .header-photo {
   width: 100%;
 }
-.header-img {
+.header-photo {
   width: 100%;
-  height: auto;
 }
 .site-wrapper {
   flex: 1 0 auto;
