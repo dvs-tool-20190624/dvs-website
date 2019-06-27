@@ -7,6 +7,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=EB+Garamond|Open+Sans&display=swap" rel="stylesheet">
 	<script src="index.js" async></script>
+	<script src="About/about.js" async></script>
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	<title>Home - Survivor Tool</title>
 </head>
@@ -32,11 +33,27 @@
 		</ul>
 	</div>
 
-	<h1 class="header-title">SURVIVOR EXPENSE CALCULATOR</h1>
+<h1 class="header-title">SURVIVOR EXPENSE CALCULATOR</h1>
 
-	<div class="img-container">
-		<img class="header-img" src="img/landing-img.jpg">
-	</div>
+	<div class="slideshow-container">
+			<div class="mySlides fade">
+				<img class="header-photo" src="img/landing-img.jpg">
+			</div>
+			<div class="mySlides fade">
+					<img class="header-photo" src="img/aboutheadercropped3.jpg">
+			</div>
+			<div class="mySlides fade">
+					<img class="header-photo" src="img/croppedresourceheader.jpg">
+			</div>
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+		<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+			  </div>
 
 
 	<div class="site-wrapper">

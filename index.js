@@ -1,14 +1,14 @@
-function navDrop(tabletView){
-    if(tabletView.matches) {
-        nav.style.display = "none";
-        menuBtn.style.display = "inline-block";
+// function navDrop(tabletView){
+//     if(tabletView.matches) {
+//         nav.style.display = "none";
+//         menuBtn.style.display = "inline-block";
 
 
-    } else {
-        nav.style.display ="";
-        menuBtn.style.display = "";
-    }
-}
+//     } else {
+//         nav.style.display ="";
+//         menuBtn.style.display = "";
+//     }
+// }
 
 const toggleMenu = () => {
     menuItems.classList.toggle('menu--open');

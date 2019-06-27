@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Open+Sans&display=swap" rel="stylesheet">
     <script src="../index.js" async></script>
     <script src="resources.js" async></script>
+    <script src="../About/about.js" async></script>
 </head>
 
 <body>
@@ -33,7 +34,27 @@
             <li><a href="#">CONTACT</a></li>
         </ul>
     </div>
-    <img class="headerImg" src="../img/resources-header-img.jpg" alt="People backlit by dawn light" />
+
+    <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img class="header-photo" src="../img/landing-img.jpg">
+            </div>
+            <div class="mySlides fade">
+                    <img class="header-photo" src="../img/aboutheadercropped3.jpg">
+            </div>
+            <div class="mySlides fade">
+                    <img class="header-photo" src="../img/croppedresourceheader.jpg">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+              </div>
+            
     <main>
         <section class="resourceIntro">
             <p>Here are a list of trusted resources. Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -47,7 +68,7 @@
 
         <section class="resourceList">
             <div class="resourceRight">
-                <div class="logo-img"><img src="../img/YouHelpLogo.png" alt="YouHelp logo"></div>
+                    <div class="logo-img"><img src="../img/YouHelpLogo.png" alt="YouHelp logo"></div>
                 <div>
                     <h2><a href="https://www.youhelp.com/crowdfunding/domestic-violence" target="_blank">YouHelp</a></h2>
                     <p>YouHelp is a crowdfunding resource for survivors. You can fundraise directly for yourself through this organization, or contribute funds to others.</p>
