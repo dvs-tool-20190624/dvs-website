@@ -32,13 +32,13 @@ let button = document.querySelector('.da-real-btn');
 console.log(button);
 
 let glow = () => {
-  console.log("LET THERE BE LIGHT!");
+  // console.log("LET THERE BE LIGHT!");
   button.classList.add('btn-hover')
   button.classList.remove('btn-leave')
 };
 
 let unglow = () => {
-  console.log("NO, GET THOSE LIGHTS OFF!");
+  // console.log("NO, GET THOSE LIGHTS OFF!");
   button.classList.add('btn-leave')
   button.classList.remove('btn-hover')
 };
@@ -46,3 +46,20 @@ let unglow = () => {
 button.addEventListener('mouseover', glow);
 button.addEventListener('mouseout', unglow);
 console.log(button.classList);
+
+// Escape Button JavaScript (Hawke)
+
+let page = document.querySelector('html');
+let escBtn = document.querySelector('.escape-btn');
+let safe = () => {
+  window.open("https://www.google.com","_self")
+};
+
+let safeKey = (e) => {
+  if(e.key === 'Escape') {
+    window.open("https://www.google.com","_self")
+  }
+};
+
+escBtn.addEventListener('click', safe);
+page.addEventListener('keyup', safeKey);

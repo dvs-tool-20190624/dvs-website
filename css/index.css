@@ -376,6 +376,9 @@ main .resourceList .resourceLeft .logo-img img {
 }
 .site-wrapper {
   flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 section {
   display: flex;
@@ -403,6 +406,30 @@ section p {
   line-height: 3.6rem;
   margin-left: 1rem;
   margin-right: 1rem;
+}
+.list {
+  background: #66b8ff;
+  border-radius: 0.2rem;
+}
+.list .super-header {
+  font-size: 2.4em;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  background: #33a0ff;
+}
+.list .ul-container {
+  padding: 0.5rem;
+}
+.list .list-header {
+  font-size: 2em;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.list .ls-items {
+  font-size: 1.6em;
+  font-family: 'EB Garamond', serif;
 }
 .btn {
   display: flex;
@@ -451,6 +478,31 @@ section p {
   100% {
     box-shadow: 0 0 0 #0088ff;
   }
+}
+.esc-parent {
+  display: flex;
+  justify-content: flex-end;
+  z-index: 1;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  user-select: none;
+}
+.esc-parent .escape-btn {
+  display: flex;
+  justify-content: center;
+  background-color: #ff7b00;
+  width: 9.5rem;
+  padding: 0.2rem;
+  margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 1rem;
+  opacity: 0.7;
+  box-shadow: 0 0 1rem #ff7b00;
+}
+.esc-parent .escape-btn .safety-esc {
+  font-size: 2.2em;
+  color: #262626;
 }
 .about-page-body .header-photo {
   width: 100%;
