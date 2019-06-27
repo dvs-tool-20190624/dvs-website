@@ -27,19 +27,11 @@ const menuItems = document.querySelector('.menu-items');
 // console.log(menuItems);
 
 let menuBtn = document.querySelector('.menuBtn');
-<<<<<<< HEAD
   menuBtn.addEventListener('click', (event) => {
     toggleMenu(event);
     console.log(event.type)
   });
 // console.log(menuBtn);
-=======
-menuBtn.addEventListener('click', (event) => {
-    menuItems.classList.toggle('menu--open');
-    console.log(event.click);
-}, true);
-
->>>>>>> 5ffead1d01c5a8ec7cd2d33d05d35e5c110a5b15
 
 // Button Hover Effect (Hawke)
 let button = document.querySelector('.da-real-btn');
