@@ -201,7 +201,7 @@ nav .menuBtn {
 }
 .menu-items {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 75px;
   right: 0;
   width: 350px;
@@ -214,6 +214,7 @@ nav .menuBtn {
 }
 @media (max-width: 500px) {
   .menu-items {
+    width: 100%;
     margin: 70px auto 0;
     left: 0;
   }
@@ -289,6 +290,11 @@ main .resourceList div {
   margin: 0 10px 30px;
   width: 90%;
 }
+@media (max-width: 800px) {
+  main .resourceList div {
+    width: auto;
+  }
+}
 main .resourceList div p {
   color: #262626;
   font-size: 1.8rem;
@@ -316,7 +322,7 @@ main .resourceList .resourceRight div {
 main .resourceList .resourceRight h2 {
   text-align: right;
 }
-@media (max-width: 800px) {
+@media (max-width: 500px) {
   main .resourceList .resourceRight h2 {
     text-align: left;
   }
