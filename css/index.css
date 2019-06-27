@@ -404,6 +404,34 @@ section p {
   margin-left: 1rem;
   margin-right: 1rem;
 }
+.super-list {
+  outline: red solid 2px;
+}
+.super-list .list {
+  margin-right: 1.5rem;
+  background: #66b8ff;
+  border-radius: 0.2rem;
+}
+.super-list .list .super-header {
+  font-size: 2.4em;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  background: #33a0ff;
+}
+.super-list .list .ul-container {
+  padding: 0.5rem;
+}
+.super-list .list .list-header {
+  font-size: 2em;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.super-list .list .ls-items {
+  font-size: 1.6em;
+  font-family: 'EB Garamond', serif;
+}
 .btn {
   display: flex;
   justify-content: center;
