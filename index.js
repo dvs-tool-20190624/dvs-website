@@ -20,8 +20,6 @@ const toggleMenu = (event) => {
     menuItems.classList.toggle('menu--open');
 }}
 
-
-
 const menuItems = document.querySelector('.menu-items');
 // console.log(menuItems);
 
