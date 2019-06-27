@@ -41,8 +41,8 @@ let teamMember = {
     "hobby":"Hiking with my family"},
 
     "jason": {"name":"Jason",
-    "bio":" ",
-    "lambda":" ",
+    "bio":"I'm a dad of 3 and family man that also enjoys to play Video Games and D&D.",
+    "lambda":" I chose Lambda to provide my kids with a great life and to help them be better and have more opportunities.",
     "hobby":" "},
 
     "mindy": {"name":"Mindy",
@@ -57,7 +57,7 @@ const bio = document.querySelectorAll('.name-description p')
  bio[2].textContent = `"${teamMember['hannah']['bio']}"\n "I chose Lambda School because ${teamMember['hannah']['lambda']}"`
 
  const bottomDevBio = document.querySelectorAll(".bottom-developers p")
- //bottomDevBio[0].textContent = `"${teamMember['jason']['bio']}"`
+ bottomDevBio[0].textContent = `"${teamMember['jason']['bio']}"\n "${teamMember['jason']['lambda']}"`
  bottomDevBio[1].textContent = `"${teamMember['mindy']['bio']}"\n "I chose Lambda School because ${teamMember['mindy']['lambda']}"`
     
 const largeText = document.querySelectorAll(".name-description")
