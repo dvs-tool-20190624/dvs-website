@@ -290,6 +290,11 @@ main .resourceList div {
   margin: 0 10px 30px;
   width: 90%;
 }
+@media (max-width: 800px) {
+  main .resourceList div {
+    width: auto;
+  }
+}
 main .resourceList div p {
   color: #262626;
   font-size: 1.8rem;
@@ -317,7 +322,7 @@ main .resourceList .resourceRight div {
 main .resourceList .resourceRight h2 {
   text-align: right;
 }
-@media (max-width: 800px) {
+@media (max-width: 500px) {
   main .resourceList .resourceRight h2 {
     text-align: left;
   }
