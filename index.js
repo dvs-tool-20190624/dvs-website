@@ -9,12 +9,9 @@
 //         menuBtn.style.display = "";
 //     }
 // }
-<<<<<<< HEAD
-=======
 
 // const toggleMenu = 
 
->>>>>>> 5ffead1d01c5a8ec7cd2d33d05d35e5c110a5b15
 // let tabletView = window.matchMedia("(max-width: 800px)");
 // tabletView.addListener(navDrop);
 
