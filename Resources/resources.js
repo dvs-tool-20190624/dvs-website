@@ -24,6 +24,5 @@ logos.forEach((logo) => {
     logo.addEventListener('mouseout', event => {
         event.target.style.width = '';
     })
-})
+});
 
-// console.log(resourceLinks);
