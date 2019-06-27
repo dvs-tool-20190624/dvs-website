@@ -44,5 +44,5 @@ let unglow = () => {
 };
 
 button.addEventListener('mouseover', glow);
-console.log(button.addEventListener('mouseover', glow));
+button.addEventListener('mouseout', unglow);
 console.log(button.classList);
