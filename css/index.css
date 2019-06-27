@@ -262,12 +262,18 @@ main {
 }
 main .resourceIntro {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
   margin: 20px auto 0;
   width: 90%;
 }
+main .resourceIntro h1 {
+  font-size: 4rem;
+  color: #06059e;
+  text-align: center;
+  padding-bottom: 17px;
+}
 main .resourceIntro p {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #262626;
   padding-bottom: 30px;
   border-bottom: 1px solid black;
