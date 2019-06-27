@@ -9,6 +9,9 @@
 
 section {
   display: flex;
+  @media @mobile {
+    flex-direction: column;
+  }
 
   .subheading{
     display: flex;
@@ -48,13 +51,10 @@ section {
     border-radius: .2rem;
     padding: 2rem 3rem;
     color: white;
-    animation: btn-glow-reverse 400ms;
   }
 
-  a:hover {
-    animation: btn-glow 300ms forwards;
-  }
-
+  .btn-hover { animation: btn-glow 300ms forwards;}
+  .btn-leave { animation: btn-glow-reverse 400ms;}
 
   @keyframes btn-glow {
     0% {box-shadow: 0 0 0 @flightBlue;}

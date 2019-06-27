@@ -217,6 +217,7 @@ nav .menuBtn {
     width: 100%;
     margin: 70px auto 0;
     left: 0;
+    position: absolute;
   }
 }
 .menu-items ul li {
@@ -373,6 +374,11 @@ main .resourceList .resourceLeft .logo-img img {
 section {
   display: flex;
 }
+@media (max-width: 500px) {
+  section {
+    flex-direction: column;
+  }
+}
 section .subheading {
   display: flex;
   justify-content: center;
@@ -405,10 +411,12 @@ section p {
   border-radius: 0.2rem;
   padding: 2rem 3rem;
   color: white;
-  animation: btn-glow-reverse 400ms;
 }
-.btn a:hover {
+.btn .btn-hover {
   animation: btn-glow 300ms forwards;
+}
+.btn .btn-leave {
+  animation: btn-glow-reverse 400ms;
 }
 @keyframes btn-glow {
   0% {
@@ -449,8 +457,8 @@ section p {
 }
 @media (max-width: 500px) {
   .about-page-body .header-photo {
-    width: 90%;
-    margin-left: 5%;
+    width: 100%;
+    margin-left: 0%;
   }
 }
 .about-page-body h1 {
