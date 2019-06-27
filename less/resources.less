@@ -4,11 +4,18 @@ main {
 
 .resourceIntro {
     display:flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    // justify-content: flex-start;
     margin:20px auto 0;
     width: 90%;
+    h1 {
+        font-size: 4rem;
+        color: @fdarkBlue;
+        text-align: center;
+        padding-bottom: 17px;
+    }
     p{
-        font-size: 1.8rem;
+        font-size: 2rem;
         color: @fdarkGrey;
         padding-bottom: 30px;
         border-bottom:1px solid black;
