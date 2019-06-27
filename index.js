@@ -10,9 +10,7 @@
 //     }
 // }
 
-const toggleMenu = () => {
-    menuItems.classList.toggle('menu--open');
-}
+// const toggleMenu = 
 
 // let tabletView = window.matchMedia("(max-width: 800px)");
 // tabletView.addListener(navDrop);
@@ -24,8 +22,11 @@ const menuItems = document.querySelector('.menu-items');
 // console.log(menuItems);
 
 let menuBtn = document.querySelector('.menuBtn');
-menuBtn.addEventListener('click', toggleMenu, true);
-// console.log(menuBtn);
+menuBtn.addEventListener('click', (event) => {
+    menuItems.classList.toggle('menu--open');
+    console.log(event.click);
+}, true);
+
 
 // Button Hover Effect (Hawke)
 let button = document.querySelector('.da-real-btn');
