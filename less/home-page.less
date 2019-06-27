@@ -1,10 +1,8 @@
 .header-photo {
   width: 100%;
-  //height: auto;
 }
 
 .header-title {
-  // outline: red solid 2px;
   color: @fdarkGrey;
   font-size: 2.6em;
   font-family: 'Open Sans', sans-serif;
@@ -15,6 +13,9 @@
 
 .site-wrapper {
   flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 section {
@@ -25,7 +26,6 @@ section {
 
   .subheading{
     display: flex;
-    // align-items: center;
     justify-content: center;
   }
   h2 {
@@ -37,7 +37,6 @@ section {
   }
 
   p {
-    // outline: red solid 2px;
     font-size: 1.8em;
     font-family: 'EB Garamond',sans-serif;
     color: @fdarkGrey;
@@ -47,12 +46,7 @@ section {
   }
 }
 
-.super-list {
-  outline: red solid 2px;
-
   .list {
-    // outline: red solid 2px;
-    margin-right: 1.5rem;
     background: lighten(@flightBlue, 20%);
     border-radius: .2rem;
 
@@ -79,7 +73,6 @@ section {
     }
 
   }
-}
 
 .btn {
   display: flex;
@@ -111,5 +104,27 @@ section {
     40% {box-shadow: 0 0 1rem @flightBlue;}
     60% {box-shadow: 0 0 .5rem @flightBlue;}
     100% {box-shadow: 0 0 0 @flightBlue;}
+  }
+}
+
+.esc-parent {
+  // outline: red solid 2px;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 1;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+
+  .escape-btn {
+    display: flex;
+    justify-content: center;
+    background-color: lighten(@forange, 10%);
+    width: 9.5rem;
+    padding: .2rem;
+    .safety-esc {
+      font-size: 2.2em;
+      color: lighten(@fdarkGrey, 10%);
+    }
   }
 }
