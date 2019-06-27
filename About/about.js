@@ -1,33 +1,3 @@
-// //code from w3schools
-// var slideIndex = 1;
-// showSlides(slideIndex);
-
-// // Next/previous controls
-// function plusSlides(n) {
-//   showSlides(slideIndex += n);
-// }
-
-// // Thumbnail image controls
-// function currentSlide(n) {
-//   showSlides(slideIndex = n);
-// }
-
-// function showSlides(n) {
-//   var i;
-//   var slides = document.getElementsByClassName("mySlides");
-//   var dots = document.getElementsByClassName("dot");
-//   if (n > slides.length) {slideIndex = 1} 
-//   if (n < 1) {slideIndex = slides.length}
-//   for (i = 0; i < slides.length; i++) {
-//       slides[i].style.display = "none"; 
-//   }
-//   for (i = 0; i < dots.length; i++) {
-//       dots[i].className = dots[i].className.replace(" active", "");
-//   }
-//   slides[slideIndex-1].style.display = "block"; 
-//   dots[slideIndex-1].className += " active";
-// }
-//end of cose from w3schools
 
 var slideIndex = 0;
 showSlides();
@@ -71,8 +41,8 @@ let teamMember = {
     "hobby":"Hiking with my family"},
 
     "jason": {"name":"Jason",
-    "bio":" ",
-    "lambda":" ",
+    "bio":"I'm a dad of 3 and family man that also enjoys to play Video Games and D&D.",
+    "lambda":" I chose Lambda to provide my kids with a great life and to help them be better and have more opportunities.",
     "hobby":" "},
 
     "mindy": {"name":"Mindy",
@@ -87,7 +57,7 @@ const bio = document.querySelectorAll('.name-description p')
  bio[2].textContent = `"${teamMember['hannah']['bio']}"\n "I chose Lambda School because ${teamMember['hannah']['lambda']}"`
 
  const bottomDevBio = document.querySelectorAll(".bottom-developers p")
- //bottomDevBio[0].textContent = `"${teamMember['jason']['bio']}"`
+ bottomDevBio[0].textContent = `"${teamMember['jason']['bio']}"\n "${teamMember['jason']['lambda']}"`
  bottomDevBio[1].textContent = `"${teamMember['mindy']['bio']}"\n "I chose Lambda School because ${teamMember['mindy']['lambda']}"`
     
 const largeText = document.querySelectorAll(".name-description")
