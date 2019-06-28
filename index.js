@@ -2,8 +2,6 @@
 //     if(tabletView.matches) {
 //         nav.style.display = "none";
 //         menuBtn.style.display = "inline-block";
-
-
 //     } else {
 //         nav.style.display ="";
 //         menuBtn.style.display = "";
@@ -29,6 +27,7 @@ const menuItems = document.querySelector('.menu-items');
 let menuBtn = document.querySelector('.menuBtn');
   menuBtn.addEventListener('click', (event) => {
     toggleMenu(event);
+
     console.log(event.type)
   });
 // console.log(menuBtn);
@@ -69,3 +68,4 @@ let safeKey = (e) => {
 
 escBtn.addEventListener('click', safe);
 page.addEventListener('keyup', safeKey);
+
