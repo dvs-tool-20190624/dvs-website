@@ -229,8 +229,12 @@ nav .menuBtn {
   color: #0088ff;
 }
 .menu--open {
-  display: block;
-  transition-duration: 3s;
+  display: none;
+}
+@media (max-width: 800px) {
+  .menu--open {
+    display: block;
+  }
 }
 footer {
   font-size: 1.6em;
