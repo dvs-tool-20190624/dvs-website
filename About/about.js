@@ -37,7 +37,7 @@ let teamMember = {
 
     "hannah": {"name":"Hannah",
     "bio":"I am a wife and mother of twin two year old girls, I am currently studying web development at Lamnbda and I am really enjoying what I am learning.",
-    "lambda":"I had friend who had gone through the whole Lambda course and she spoke so highly of the program that I started to look into it and got hooked.",
+    "lambda":"I had a friend who had gone through the whole Lambda course and she spoke so highly of the program that I started to look into it and got hooked.",
     "hobby":"Hiking with my family"},
 
     "jason": {"name":"Jason",
@@ -60,7 +60,7 @@ const bio = document.querySelectorAll('.name-description p')
  bottomDevBio[0].textContent = `"${teamMember['jason']['bio']}"\n "${teamMember['jason']['lambda']}"`
  bottomDevBio[1].textContent = `"${teamMember['mindy']['bio']}"\n "I chose Lambda School because ${teamMember['mindy']['lambda']}"`
     
-const largeText = document.querySelectorAll(".name-description")
+const largeText = document.querySelectorAll(".name-description p")
 largeText.forEach((lText) => {
     lText.addEventListener('mouseover', event => {
         event.target.style.transform = 'scale(1.1)'
@@ -72,7 +72,7 @@ largeText.forEach((rText) => {
     rText.addEventListener('mouseleave', event => {
     event.target.style.transform = 'scale(1)'
     event.target.style.marginRight = "0%"
-    event.target.style.paddingLeft = "2%"
+    event.target.style.paddingLeft = "0%"
 })
 })
 
@@ -86,7 +86,7 @@ largetext.forEach((lText) => {
 
 largetext.forEach((rText) => {
     rText.addEventListener('mouseleave', event => {
-    event.target.style.transform = 'scale(.95)'
+    event.target.style.transform = 'scale(1)'
 })
 })
 
@@ -101,62 +101,24 @@ largetext.forEach((width) => {
 largetext.forEach((width) => {
     width.addEventListener('mouseleave', event => {
         event.target.style.width = '100%'
+        event.target.style.marginLeft = '0%'
+        event.target.style.marginright = '0%'
+    })
+})
+
+let hover = document.querySelectorAll(".github-icon")
+
+hover.forEach((icon) => {
+    icon.addEventListener('mouseover', event => {
+        event.target.classList.add('hover-color')
+    })
+})
+
+hover.forEach((icon) => {
+    icon.addEventListener('mouseout', event => {
+        event.target.classList.remove('hover-color')
     })
 })
 
 
-// class TabLink {
-//     constructor(element) {
-//       // Assign this.element to the passed in DOM element
-//       this.element = element;
-//       //console.log('this is the class', this.element.dataset.tab)
-//       // Get the custom data attribute on the Link
-//       this.data = element.dataset.tab;
-      
-//       // Using the custom data attribute get the associated Item element
-//       this.itemElement = document.querySelector(`.tabs-item[data-tab='${this.data}']`);
-//       //console.log(this.itemElement)
-      
-//       // Using the Item element, create a new instance of the TabItem class
-//       this.tabItem = new TabItem(this.itemElement);
-//       //console.log(tabItem)
-//       // Add a click event listener on this instance, calling the select method on click
-//       this.element.addEventListener('click', () => this.select())
-  
-//     };
-  
-//     select() {
-//       // Get all of the elements with the tabs-link class
-//       const links = document.querySelectorAll('.tabs-link');
-  
-//       // Using a loop or the forEach method remove the 'tabs-link-selected' class from all of the links
-//       Array.from(links).forEach(item => item.classList.remove('tabs-link-selected'));
-  
-//       // Add a class named "tabs-link-selected" to this link
-//       this.element.classList.add('tabs-link-selected');
-      
-//       // Call the select method on the item associated with this link
-//       this.tabItem.select()
-//     }
-//   }
-  
-//   class TabItem {
-//     constructor(element) {
-//       // Assign this.element to the passed in element
-//       this.element = element;
-//     }
-  
-//     select() {
-//       // Select all ".tabs-item" elements from the DOM
-//       const items = document.querySelectorAll('.tabs-item');
-//       console.log('items', items)
-//       // Remove the class "tabs-item-selected" from each element
-//       Array.from(items).forEach(item => item.classList.remove('tabs-item-selected'));
-//       // Add a class named "tabs-item-selected" to this element
-//       this.element.classList.add('tabs-item-selected');
-//     }
-//   }
-  
-  
-//   links = document.querySelectorAll('.tabs-link').forEach(link => new TabLink(link));
   

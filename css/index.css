@@ -230,12 +230,8 @@ nav .menuBtn {
   color: #0088ff;
 }
 .menu--open {
-  display: none;
-}
-@media (max-width: 800px) {
-  .menu--open {
-    display: block;
-  }
+  display: block;
+  transition-duration: 3s;
 }
 footer {
   width: 100%;
@@ -280,6 +276,11 @@ main .resourceIntro p {
   padding-bottom: 30px;
   border-bottom: 1px solid black;
 }
+@media (max-width: 500px) {
+  main .resourceIntro p {
+    border: none;
+  }
+}
 main .resourceList {
   display: flex;
   flex-direction: column;
@@ -290,6 +291,13 @@ main .resourceList h2 {
   font-size: 3rem;
   margin-bottom: 10px;
   margin-top: 20px;
+}
+@media (max-width: 500px) {
+  main .resourceList h2 {
+    border-top: 1px solid black;
+    margin-top: 0;
+    padding-top: 20px;
+  }
 }
 main .resourceList h2 a {
   color: #06059e;
@@ -734,6 +742,21 @@ section p {
   width: 90%;
   border-radius: 50%;
   margin-left: 7%;
+}
+.about-page-body .about-page-main .tabs-links {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 2rem;
+  margin-top: 5%;
+}
+.about-page-body .about-page-main .tabs-items {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 5%;
+}
+.hover-color {
+  border-radius: 50%;
+  box-shadow: 0 0 1.5rem #0088ff;
 }
 .mySlides {
   display: none;
