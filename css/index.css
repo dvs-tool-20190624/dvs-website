@@ -446,10 +446,13 @@ section p {
   font-family: 'Open Sans', sans-serif;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
+  border-bottom: #262626 solid 2px;
 }
 .list .ls-items {
   font-size: 1.6em;
   font-family: 'EB Garamond', serif;
+  line-height: 1.8rem;
+  border-bottom: 1.5rem;
 }
 .btn {
   display: flex;
