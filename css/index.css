@@ -758,6 +758,9 @@ section p {
   justify-content: space-evenly;
   margin-bottom: 5%;
 }
+.slideshow-container {
+  width: 100%;
+}
 .hover-color {
   border-radius: 50%;
   box-shadow: 0 0 1.5rem #0088ff;
