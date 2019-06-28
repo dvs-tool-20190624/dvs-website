@@ -37,7 +37,7 @@ let teamMember = {
 
     "hannah": {"name":"Hannah",
     "bio":"I am a wife and mother of twin two year old girls, I am currently studying web development at Lamnbda and I am really enjoying what I am learning.",
-    "lambda":"I had friend who had gone through the whole Lambda course and she spoke so highly of the program that I started to look into it and got hooked.",
+    "lambda":"I had a friend who had gone through the whole Lambda course and she spoke so highly of the program that I started to look into it and got hooked.",
     "hobby":"Hiking with my family"},
 
     "jason": {"name":"Jason",
@@ -72,7 +72,7 @@ largeText.forEach((rText) => {
     rText.addEventListener('mouseleave', event => {
     event.target.style.transform = 'scale(1)'
     event.target.style.marginRight = "0%"
-    event.target.style.paddingLeft = "2%"
+    event.target.style.paddingLeft = "0%"
 })
 })
 
@@ -86,7 +86,7 @@ largetext.forEach((lText) => {
 
 largetext.forEach((rText) => {
     rText.addEventListener('mouseleave', event => {
-    event.target.style.transform = 'scale(.95)'
+    event.target.style.transform = 'scale(1)'
 })
 })
 
@@ -101,6 +101,8 @@ largetext.forEach((width) => {
 largetext.forEach((width) => {
     width.addEventListener('mouseleave', event => {
         event.target.style.width = '100%'
+        event.target.style.marginLeft = '0%'
+        event.target.style.marginright = '0%'
     })
 })
 
