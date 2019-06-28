@@ -27,7 +27,7 @@ function showSlides() {
 let teamMember = {
     "hawke": {"name":"Hawke",
     "bio":"I spend a lot of time thinking about design and how things look. I live a pretty minimalist life, and when I'm not at a computer, I love to do anything involving bikes.",
-    "lambda":"the short minimal risk was a huge draw for me, and I'm always one to try alternatives to the norm.",
+    "lambda":"the minimal risk was a huge draw for me, and I'm always one to try alternatives to the norm.",
     "hobby":"I like to create mixtapes on cassette in my freetime, as well as bootleg tape releases for my favorite Albums" },
 
     "neha": {"name":"Neha",
