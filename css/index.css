@@ -230,6 +230,7 @@ nav .menuBtn {
 }
 .menu--open {
   display: block;
+  transition-duration: 3s;
 }
 footer {
   font-size: 1.6em;
@@ -273,6 +274,11 @@ main .resourceIntro p {
   padding-bottom: 30px;
   border-bottom: 1px solid black;
 }
+@media (max-width: 500px) {
+  main .resourceIntro p {
+    border: none;
+  }
+}
 main .resourceList {
   display: flex;
   flex-direction: column;
@@ -283,6 +289,13 @@ main .resourceList h2 {
   font-size: 3rem;
   margin-bottom: 10px;
   margin-top: 20px;
+}
+@media (max-width: 500px) {
+  main .resourceList h2 {
+    border-top: 1px solid black;
+    margin-top: 0;
+    padding-top: 20px;
+  }
 }
 main .resourceList h2 a {
   color: #06059e;
